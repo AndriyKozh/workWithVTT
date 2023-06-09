@@ -1,0 +1,5814 @@
+1
+00:00:00,080 --> 00:00:01,429
+hey guys how's it going i'm back here
+
+2
+00:00:01,439 --> 00:00:03,189
+hey guys how's it going i'm back here
+with another video of my series where i
+
+3
+00:00:03,189 --> 00:00:03,199
+with another video of my series where i
+
+4
+00:00:03,199 --> 00:00:04,390
+with another video of my series where i
+teach you guys how to make a credit
+
+5
+00:00:04,390 --> 00:00:04,400
+teach you guys how to make a credit
+
+6
+00:00:04,400 --> 00:00:06,230
+teach you guys how to make a credit
+application from the beginning
+
+7
+00:00:06,230 --> 00:00:06,240
+application from the beginning
+
+8
+00:00:06,240 --> 00:00:08,390
+application from the beginning
+and i know the last video was pretty
+
+9
+00:00:08,390 --> 00:00:08,400
+and i know the last video was pretty
+
+10
+00:00:08,400 --> 00:00:10,310
+and i know the last video was pretty
+long it was like 30 minutes long
+
+11
+00:00:10,310 --> 00:00:10,320
+long it was like 30 minutes long
+
+12
+00:00:10,320 --> 00:00:12,310
+long it was like 30 minutes long
+but i think this is the last video of my
+
+13
+00:00:12,310 --> 00:00:12,320
+but i think this is the last video of my
+
+14
+00:00:12,320 --> 00:00:13,430
+but i think this is the last video of my
+series so
+
+15
+00:00:13,430 --> 00:00:13,440
+series so
+
+16
+00:00:13,440 --> 00:00:15,749
+series so
+currently we can read like everything
+
+17
+00:00:15,749 --> 00:00:15,759
+currently we can read like everything
+
+18
+00:00:15,759 --> 00:00:16,790
+currently we can read like everything
+from the database
+
+19
+00:00:16,790 --> 00:00:16,800
+from the database
+
+20
+00:00:16,800 --> 00:00:19,830
+from the database
+and we can also insert everything in our
+
+21
+00:00:19,830 --> 00:00:19,840
+and we can also insert everything in our
+
+22
+00:00:19,840 --> 00:00:20,790
+and we can also insert everything in our
+database
+
+23
+00:00:20,790 --> 00:00:20,800
+database
+
+24
+00:00:20,800 --> 00:00:24,310
+database
+and what we need to do left is maybe
+
+25
+00:00:24,310 --> 00:00:24,320
+and what we need to do left is maybe
+
+26
+00:00:24,320 --> 00:00:26,950
+and what we need to do left is maybe
+i'm thinking like trying to to make a
+
+27
+00:00:26,950 --> 00:00:26,960
+i'm thinking like trying to to make a
+
+28
+00:00:26,960 --> 00:00:29,429
+i'm thinking like trying to to make a
+way so that whenever you add a movie
+
+29
+00:00:29,429 --> 00:00:29,439
+way so that whenever you add a movie
+
+30
+00:00:29,439 --> 00:00:30,950
+way so that whenever you add a movie
+to our database you don't need to
+
+31
+00:00:30,950 --> 00:00:30,960
+to our database you don't need to
+
+32
+00:00:30,960 --> 00:00:32,630
+to our database you don't need to
+refresh the page because currently for
+
+33
+00:00:32,630 --> 00:00:32,640
+refresh the page because currently for
+
+34
+00:00:32,640 --> 00:00:33,270
+refresh the page because currently for
+example
+
+35
+00:00:33,270 --> 00:00:33,280
+example
+
+36
+00:00:33,280 --> 00:00:37,030
+example
+if i write here fast
+
+37
+00:00:37,030 --> 00:00:37,040
+if i write here fast
+
+38
+00:00:37,040 --> 00:00:40,229
+if i write here fast
+and furious right and
+
+39
+00:00:40,229 --> 00:00:40,239
+and furious right and
+
+40
+00:00:40,239 --> 00:00:44,069
+and furious right and
+i come here and write very good and i
+
+41
+00:00:44,069 --> 00:00:44,079
+i come here and write very good and i
+
+42
+00:00:44,079 --> 00:00:45,190
+i come here and write very good and i
+submit
+
+43
+00:00:45,190 --> 00:00:45,200
+submit
+
+44
+00:00:45,200 --> 00:00:47,110
+submit
+nothing appears you need to refresh the
+
+45
+00:00:47,110 --> 00:00:47,120
+nothing appears you need to refresh the
+
+46
+00:00:47,120 --> 00:00:48,630
+nothing appears you need to refresh the
+page so that it will
+
+47
+00:00:48,630 --> 00:00:48,640
+page so that it will
+
+48
+00:00:48,640 --> 00:00:50,069
+page so that it will
+fetch the new information from the
+
+49
+00:00:50,069 --> 00:00:50,079
+fetch the new information from the
+
+50
+00:00:50,079 --> 00:00:51,830
+fetch the new information from the
+database why is this happening
+
+51
+00:00:51,830 --> 00:00:51,840
+database why is this happening
+
+52
+00:00:51,840 --> 00:00:54,310
+database why is this happening
+basically we are only wait let me come
+
+53
+00:00:54,310 --> 00:00:54,320
+basically we are only wait let me come
+
+54
+00:00:54,320 --> 00:00:55,270
+basically we are only wait let me come
+to app.js
+
+55
+00:00:55,270 --> 00:00:55,280
+to app.js
+
+56
+00:00:55,280 --> 00:00:56,630
+to app.js
+we're only getting the information
+
+57
+00:00:56,630 --> 00:00:56,640
+we're only getting the information
+
+58
+00:00:56,640 --> 00:00:58,950
+we're only getting the information
+whenever the use effect hook is called
+
+59
+00:00:58,950 --> 00:00:58,960
+whenever the use effect hook is called
+
+60
+00:00:58,960 --> 00:01:00,869
+whenever the use effect hook is called
+and this only happens once whenever the
+
+61
+00:01:00,869 --> 00:01:00,879
+and this only happens once whenever the
+
+62
+00:01:00,879 --> 00:01:03,349
+and this only happens once whenever the
+page is rendered so we need to fix that
+
+63
+00:01:03,349 --> 00:01:03,359
+page is rendered so we need to fix that
+
+64
+00:01:03,359 --> 00:01:05,108
+page is rendered so we need to fix that
+so that whenever we just click here we
+
+65
+00:01:05,108 --> 00:01:05,119
+so that whenever we just click here we
+
+66
+00:01:05,119 --> 00:01:06,390
+so that whenever we just click here we
+don't need to refresh the page
+
+67
+00:01:06,390 --> 00:01:06,400
+don't need to refresh the page
+
+68
+00:01:06,400 --> 00:01:07,910
+don't need to refresh the page
+and this is basically one of the best
+
+69
+00:01:07,910 --> 00:01:07,920
+and this is basically one of the best
+
+70
+00:01:07,920 --> 00:01:09,830
+and this is basically one of the best
+things that react can do and we're going
+
+71
+00:01:09,830 --> 00:01:09,840
+things that react can do and we're going
+
+72
+00:01:09,840 --> 00:01:11,350
+things that react can do and we're going
+to take advantage of that
+
+73
+00:01:11,350 --> 00:01:11,360
+to take advantage of that
+
+74
+00:01:11,360 --> 00:01:13,350
+to take advantage of that
+and also i'm thinking we need to style
+
+75
+00:01:13,350 --> 00:01:13,360
+and also i'm thinking we need to style
+
+76
+00:01:13,360 --> 00:01:15,510
+and also i'm thinking we need to style
+this a bit so that we can have like a
+
+77
+00:01:15,510 --> 00:01:15,520
+this a bit so that we can have like a
+
+78
+00:01:15,520 --> 00:01:16,149
+this a bit so that we can have like a
+nice
+
+79
+00:01:16,149 --> 00:01:16,159
+nice
+
+80
+00:01:16,159 --> 00:01:19,030
+nice
+card for each movie and in each card
+
+81
+00:01:19,030 --> 00:01:19,040
+card for each movie and in each card
+
+82
+00:01:19,040 --> 00:01:20,310
+card for each movie and in each card
+there's going to be
+
+83
+00:01:20,310 --> 00:01:20,320
+there's going to be
+
+84
+00:01:20,320 --> 00:01:23,510
+there's going to be
+maybe an update button and
+
+85
+00:01:23,510 --> 00:01:23,520
+maybe an update button and
+
+86
+00:01:23,520 --> 00:01:26,310
+maybe an update button and
+a delete button so we can finish the
+
+87
+00:01:26,310 --> 00:01:26,320
+a delete button so we can finish the
+
+88
+00:01:26,320 --> 00:01:27,109
+a delete button so we can finish the
+crud
+
+89
+00:01:27,109 --> 00:01:27,119
+crud
+
+90
+00:01:27,119 --> 00:01:29,670
+crud
+aspect of our application which like up
+
+91
+00:01:29,670 --> 00:01:29,680
+aspect of our application which like up
+
+92
+00:01:29,680 --> 00:01:30,149
+aspect of our application which like up
+it means
+
+93
+00:01:30,149 --> 00:01:30,159
+it means
+
+94
+00:01:30,159 --> 00:01:32,710
+it means
+basically update and delete and i think
+
+95
+00:01:32,710 --> 00:01:32,720
+basically update and delete and i think
+
+96
+00:01:32,720 --> 00:01:33,590
+basically update and delete and i think
+that's it
+
+97
+00:01:33,590 --> 00:01:33,600
+that's it
+
+98
+00:01:33,600 --> 00:01:35,749
+that's it
+so the first thing we're going to do is
+
+99
+00:01:35,749 --> 00:01:35,759
+so the first thing we're going to do is
+
+100
+00:01:35,759 --> 00:01:36,870
+so the first thing we're going to do is
+we're going to make the
+
+101
+00:01:36,870 --> 00:01:36,880
+we're going to make the
+
+102
+00:01:36,880 --> 00:01:39,190
+we're going to make the
+application be able to update itself
+
+103
+00:01:39,190 --> 00:01:39,200
+application be able to update itself
+
+104
+00:01:39,200 --> 00:01:39,990
+application be able to update itself
+cons
+
+105
+00:01:39,990 --> 00:01:40,000
+cons
+
+106
+00:01:40,000 --> 00:01:43,190
+cons
+consistently so let's come here
+
+107
+00:01:43,190 --> 00:01:43,200
+consistently so let's come here
+
+108
+00:01:43,200 --> 00:01:45,670
+consistently so let's come here
+and you know that we have a movie review
+
+109
+00:01:45,670 --> 00:01:45,680
+and you know that we have a movie review
+
+110
+00:01:45,680 --> 00:01:46,469
+and you know that we have a movie review
+list
+
+111
+00:01:46,469 --> 00:01:46,479
+list
+
+112
+00:01:46,479 --> 00:01:48,789
+list
+this is basically the the list that is
+
+113
+00:01:48,789 --> 00:01:48,799
+this is basically the the list that is
+
+114
+00:01:48,799 --> 00:01:51,350
+this is basically the the list that is
+displaying right here with all the names
+
+115
+00:01:51,350 --> 00:01:51,360
+displaying right here with all the names
+
+116
+00:01:51,360 --> 00:01:53,830
+displaying right here with all the names
+so whenever we click on submit review i
+
+117
+00:01:53,830 --> 00:01:53,840
+so whenever we click on submit review i
+
+118
+00:01:53,840 --> 00:01:55,270
+so whenever we click on submit review i
+simply want to add
+
+119
+00:01:55,270 --> 00:01:55,280
+simply want to add
+
+120
+00:01:55,280 --> 00:01:57,429
+simply want to add
+the the new movie that i'm that i'm
+
+121
+00:01:57,429 --> 00:01:57,439
+the the new movie that i'm that i'm
+
+122
+00:01:57,439 --> 00:01:59,350
+the the new movie that i'm that i'm
+submitting into that list
+
+123
+00:01:59,350 --> 00:01:59,360
+submitting into that list
+
+124
+00:01:59,360 --> 00:02:02,389
+submitting into that list
+so i'll just grab set movie list
+
+125
+00:02:02,389 --> 00:02:02,399
+so i'll just grab set movie list
+
+126
+00:02:02,399 --> 00:02:06,870
+so i'll just grab set movie list
+and i'll come here and i'll erase this
+
+127
+00:02:06,870 --> 00:02:06,880
+and i'll come here and i'll erase this
+
+128
+00:02:06,880 --> 00:02:09,990
+and i'll come here and i'll erase this
+and i'll set the movie list equal to
+
+129
+00:02:09,990 --> 00:02:10,000
+and i'll set the movie list equal to
+
+130
+00:02:10,000 --> 00:02:13,510
+and i'll set the movie list equal to
+the current movie list so movie list
+
+131
+00:02:13,510 --> 00:02:13,520
+the current movie list so movie list
+
+132
+00:02:13,520 --> 00:02:15,350
+the current movie list so movie list
+and i'm also going to add some dots
+
+133
+00:02:15,350 --> 00:02:15,360
+and i'm also going to add some dots
+
+134
+00:02:15,360 --> 00:02:20,830
+and i'm also going to add some dots
+before it so
+
+135
+00:02:20,830 --> 00:02:20,840
+
+
+136
+00:02:20,840 --> 00:02:21,990
+and
+
+137
+00:02:22,000 --> 00:02:23,910
+and
+want to add the new movie that we're
+
+138
+00:02:23,910 --> 00:02:23,920
+want to add the new movie that we're
+
+139
+00:02:23,920 --> 00:02:25,750
+want to add the new movie that we're
+adding to our database
+
+140
+00:02:25,750 --> 00:02:25,760
+adding to our database
+
+141
+00:02:25,760 --> 00:02:27,830
+adding to our database
+which is basically an object with the
+
+142
+00:02:27,830 --> 00:02:27,840
+which is basically an object with the
+
+143
+00:02:27,840 --> 00:02:29,430
+which is basically an object with the
+movie name and the
+
+144
+00:02:29,430 --> 00:02:29,440
+movie name and the
+
+145
+00:02:29,440 --> 00:02:32,190
+movie name and the
+movie review so um
+
+146
+00:02:32,190 --> 00:02:32,200
+movie review so um
+
+147
+00:02:32,200 --> 00:02:33,670
+movie review so um
+[Music]
+
+148
+00:02:33,670 --> 00:02:33,680
+[Music]
+
+149
+00:02:33,680 --> 00:02:37,350
+[Music]
+movie name equals to the current movie
+
+150
+00:02:37,350 --> 00:02:37,360
+movie name equals to the current movie
+
+151
+00:02:37,360 --> 00:02:39,430
+movie name equals to the current movie
+name
+
+152
+00:02:39,430 --> 00:02:39,440
+name
+
+153
+00:02:39,440 --> 00:02:43,509
+name
+and review i think it's review
+
+154
+00:02:43,509 --> 00:02:43,519
+and review i think it's review
+
+155
+00:02:43,519 --> 00:02:46,630
+and review i think it's review
+let me look at the object um
+
+156
+00:02:46,630 --> 00:02:46,640
+let me look at the object um
+
+157
+00:02:46,640 --> 00:02:49,430
+let me look at the object um
+let me see when we're displaying
+
+158
+00:02:49,430 --> 00:02:49,440
+let me see when we're displaying
+
+159
+00:02:49,440 --> 00:02:49,990
+let me see when we're displaying
+basically
+
+160
+00:02:49,990 --> 00:02:50,000
+basically
+
+161
+00:02:50,000 --> 00:02:52,150
+basically
+it's a movie name and movie review okay
+
+162
+00:02:52,150 --> 00:02:52,160
+it's a movie name and movie review okay
+
+163
+00:02:52,160 --> 00:02:55,990
+it's a movie name and movie review okay
+so movie review
+
+164
+00:02:55,990 --> 00:02:56,000
+
+
+165
+00:02:56,000 --> 00:02:59,190
+is equal to review so now
+
+166
+00:02:59,200 --> 00:03:00,869
+is equal to review so now
+whenever we're adding something to the
+
+167
+00:03:00,869 --> 00:03:00,879
+whenever we're adding something to the
+
+168
+00:03:00,879 --> 00:03:02,309
+whenever we're adding something to the
+database we're also
+
+169
+00:03:02,309 --> 00:03:02,319
+database we're also
+
+170
+00:03:02,319 --> 00:03:04,390
+database we're also
+after after making the post request
+
+171
+00:03:04,390 --> 00:03:04,400
+after after making the post request
+
+172
+00:03:04,400 --> 00:03:05,910
+after after making the post request
+request we're also
+
+173
+00:03:05,910 --> 00:03:05,920
+request we're also
+
+174
+00:03:05,920 --> 00:03:09,030
+request we're also
+setting the movie list with equal to the
+
+175
+00:03:09,030 --> 00:03:09,040
+setting the movie list with equal to the
+
+176
+00:03:09,040 --> 00:03:10,149
+setting the movie list with equal to the
+same movie list
+
+177
+00:03:10,149 --> 00:03:10,159
+same movie list
+
+178
+00:03:10,159 --> 00:03:11,990
+same movie list
+but pushing a new element which is the
+
+179
+00:03:11,990 --> 00:03:12,000
+but pushing a new element which is the
+
+180
+00:03:12,000 --> 00:03:14,149
+but pushing a new element which is the
+one we're submitting to our database
+
+181
+00:03:14,149 --> 00:03:14,159
+one we're submitting to our database
+
+182
+00:03:14,159 --> 00:03:16,710
+one we're submitting to our database
+and let's try this again so if i add a
+
+183
+00:03:16,710 --> 00:03:16,720
+and let's try this again so if i add a
+
+184
+00:03:16,720 --> 00:03:17,430
+and let's try this again so if i add a
+movie
+
+185
+00:03:17,430 --> 00:03:17,440
+movie
+
+186
+00:03:17,440 --> 00:03:21,190
+movie
+for example uh let me think of a movie
+
+187
+00:03:21,190 --> 00:03:21,200
+for example uh let me think of a movie
+
+188
+00:03:21,200 --> 00:03:25,990
+for example uh let me think of a movie
+um i don't know hobbit
+
+189
+00:03:25,990 --> 00:03:26,000
+um i don't know hobbit
+
+190
+00:03:26,000 --> 00:03:29,589
+um i don't know hobbit
+and i give it a review nice
+
+191
+00:03:29,589 --> 00:03:29,599
+and i give it a review nice
+
+192
+00:03:29,599 --> 00:03:32,789
+and i give it a review nice
+movie and i press submit you can see
+
+193
+00:03:32,789 --> 00:03:32,799
+movie and i press submit you can see
+
+194
+00:03:32,799 --> 00:03:33,509
+movie and i press submit you can see
+that
+
+195
+00:03:33,509 --> 00:03:33,519
+that
+
+196
+00:03:33,519 --> 00:03:35,509
+that
+nothing happens why is it happening let
+
+197
+00:03:35,509 --> 00:03:35,519
+nothing happens why is it happening let
+
+198
+00:03:35,519 --> 00:03:37,990
+nothing happens why is it happening let
+me let me look at the inspect element
+
+199
+00:03:37,990 --> 00:03:38,000
+me let me look at the inspect element
+
+200
+00:03:38,000 --> 00:03:41,110
+me let me look at the inspect element
+um each child this isn't the problem
+
+201
+00:03:41,110 --> 00:03:41,120
+um each child this isn't the problem
+
+202
+00:03:41,120 --> 00:03:43,430
+um each child this isn't the problem
+let me refresh it and if we refresh it
+
+203
+00:03:43,430 --> 00:03:43,440
+let me refresh it and if we refresh it
+
+204
+00:03:43,440 --> 00:03:44,149
+let me refresh it and if we refresh it
+it works but
+
+205
+00:03:44,149 --> 00:03:44,159
+it works but
+
+206
+00:03:44,159 --> 00:03:46,710
+it works but
+why is it not working okay guys i fixed
+
+207
+00:03:46,710 --> 00:03:46,720
+why is it not working okay guys i fixed
+
+208
+00:03:46,720 --> 00:03:47,589
+why is it not working okay guys i fixed
+it basically
+
+209
+00:03:47,589 --> 00:03:47,599
+it basically
+
+210
+00:03:47,599 --> 00:03:49,990
+it basically
+i was setting everything on the promise
+
+211
+00:03:49,990 --> 00:03:50,000
+i was setting everything on the promise
+
+212
+00:03:50,000 --> 00:03:51,589
+i was setting everything on the promise
+basically after the post request there
+
+213
+00:03:51,589 --> 00:03:51,599
+basically after the post request there
+
+214
+00:03:51,599 --> 00:03:52,149
+basically after the post request there
+was
+
+215
+00:03:52,149 --> 00:03:52,159
+was
+
+216
+00:03:52,159 --> 00:03:54,869
+was
+a dot then and that wasn't working so
+
+217
+00:03:54,869 --> 00:03:54,879
+a dot then and that wasn't working so
+
+218
+00:03:54,879 --> 00:03:55,910
+a dot then and that wasn't working so
+what i would recommend
+
+219
+00:03:55,910 --> 00:03:55,920
+what i would recommend
+
+220
+00:03:55,920 --> 00:03:59,110
+what i would recommend
+is just separating both so make the
+
+221
+00:03:59,110 --> 00:03:59,120
+is just separating both so make the
+
+222
+00:03:59,120 --> 00:04:01,270
+is just separating both so make the
+excuse.post request over here
+
+223
+00:04:01,270 --> 00:04:01,280
+excuse.post request over here
+
+224
+00:04:01,280 --> 00:04:03,270
+excuse.post request over here
+and then set the movie list so if i come
+
+225
+00:04:03,270 --> 00:04:03,280
+and then set the movie list so if i come
+
+226
+00:04:03,280 --> 00:04:04,550
+and then set the movie list so if i come
+here and write
+
+227
+00:04:04,550 --> 00:04:04,560
+here and write
+
+228
+00:04:04,560 --> 00:04:06,630
+here and write
+the name of a random movie like percy
+
+229
+00:04:06,630 --> 00:04:06,640
+the name of a random movie like percy
+
+230
+00:04:06,640 --> 00:04:08,070
+the name of a random movie like percy
+jackson
+
+231
+00:04:08,070 --> 00:04:08,080
+jackson
+
+232
+00:04:08,080 --> 00:04:09,830
+jackson
+and you can see like there's no percy
+
+233
+00:04:09,830 --> 00:04:09,840
+and you can see like there's no percy
+
+234
+00:04:09,840 --> 00:04:11,110
+and you can see like there's no percy
+jackson here
+
+235
+00:04:11,110 --> 00:04:11,120
+jackson here
+
+236
+00:04:11,120 --> 00:04:15,030
+jackson here
+um nice movie
+
+237
+00:04:15,030 --> 00:04:15,040
+um nice movie
+
+238
+00:04:15,040 --> 00:04:17,189
+um nice movie
+and i press submit now percy jackson
+
+239
+00:04:17,189 --> 00:04:17,199
+and i press submit now percy jackson
+
+240
+00:04:17,199 --> 00:04:18,870
+and i press submit now percy jackson
+appears here and i don't need to refresh
+
+241
+00:04:18,870 --> 00:04:18,880
+appears here and i don't need to refresh
+
+242
+00:04:18,880 --> 00:04:19,589
+appears here and i don't need to refresh
+my page
+
+243
+00:04:19,589 --> 00:04:19,600
+my page
+
+244
+00:04:19,600 --> 00:04:21,990
+my page
+so basically that's it so what i'm
+
+245
+00:04:21,990 --> 00:04:22,000
+so basically that's it so what i'm
+
+246
+00:04:22,000 --> 00:04:23,670
+so basically that's it so what i'm
+thinking we need to do now is style this
+
+247
+00:04:23,670 --> 00:04:23,680
+thinking we need to do now is style this
+
+248
+00:04:23,680 --> 00:04:25,110
+thinking we need to do now is style this
+a bit because you're you're seeing that
+
+249
+00:04:25,110 --> 00:04:25,120
+a bit because you're you're seeing that
+
+250
+00:04:25,120 --> 00:04:26,150
+a bit because you're you're seeing that
+this
+
+251
+00:04:26,150 --> 00:04:26,160
+this
+
+252
+00:04:26,160 --> 00:04:28,150
+this
+it's like taking a lot of space it's not
+
+253
+00:04:28,150 --> 00:04:28,160
+it's like taking a lot of space it's not
+
+254
+00:04:28,160 --> 00:04:29,749
+it's like taking a lot of space it's not
+it's not visually
+
+255
+00:04:29,749 --> 00:04:29,759
+it's not visually
+
+256
+00:04:29,759 --> 00:04:32,629
+it's not visually
+uh pleasing and also like we need to
+
+257
+00:04:32,629 --> 00:04:32,639
+uh pleasing and also like we need to
+
+258
+00:04:32,639 --> 00:04:34,390
+uh pleasing and also like we need to
+make it into some cards right
+
+259
+00:04:34,390 --> 00:04:34,400
+make it into some cards right
+
+260
+00:04:34,400 --> 00:04:38,390
+make it into some cards right
+so let's create a card right here so
+
+261
+00:04:38,390 --> 00:04:38,400
+so let's create a card right here so
+
+262
+00:04:38,400 --> 00:04:41,749
+so let's create a card right here so
+um over here we're going instead of just
+
+263
+00:04:41,749 --> 00:04:41,759
+um over here we're going instead of just
+
+264
+00:04:41,759 --> 00:04:44,710
+um over here we're going instead of just
+making it making it uh h1 i'm going to
+
+265
+00:04:44,710 --> 00:04:44,720
+making it making it uh h1 i'm going to
+
+266
+00:04:44,720 --> 00:04:46,790
+making it making it uh h1 i'm going to
+make it a div
+
+267
+00:04:46,790 --> 00:04:46,800
+make it a div
+
+268
+00:04:46,800 --> 00:04:52,230
+make it a div
+and the div will have a class name
+
+269
+00:04:52,230 --> 00:04:52,240
+and the div will have a class name
+
+270
+00:04:52,240 --> 00:04:55,990
+and the div will have a class name
+of um card
+
+271
+00:04:55,990 --> 00:04:56,000
+of um card
+
+272
+00:04:56,000 --> 00:04:58,469
+of um card
+and then inside of here there's going to
+
+273
+00:04:58,469 --> 00:04:58,479
+and then inside of here there's going to
+
+274
+00:04:58,479 --> 00:04:59,110
+and then inside of here there's going to
+be a
+
+275
+00:04:59,110 --> 00:04:59,120
+be a
+
+276
+00:04:59,120 --> 00:05:02,390
+be a
+an h1 which is basically going to be the
+
+277
+00:05:02,390 --> 00:05:02,400
+an h1 which is basically going to be the
+
+278
+00:05:02,400 --> 00:05:03,510
+an h1 which is basically going to be the
+movie
+
+279
+00:05:03,510 --> 00:05:03,520
+movie
+
+280
+00:05:03,520 --> 00:05:05,670
+movie
+and there's no not like i'm going to
+
+281
+00:05:05,670 --> 00:05:05,680
+and there's no not like i'm going to
+
+282
+00:05:05,680 --> 00:05:08,870
+and there's no not like i'm going to
+erase this movie name part because
+
+283
+00:05:08,870 --> 00:05:08,880
+erase this movie name part because
+
+284
+00:05:08,880 --> 00:05:11,430
+erase this movie name part because
+we're gonna try to make it a little bit
+
+285
+00:05:11,430 --> 00:05:11,440
+we're gonna try to make it a little bit
+
+286
+00:05:11,440 --> 00:05:12,710
+we're gonna try to make it a little bit
+prettier so
+
+287
+00:05:12,710 --> 00:05:12,720
+prettier so
+
+288
+00:05:12,720 --> 00:05:14,070
+prettier so
+we're just putting the movie name on the
+
+289
+00:05:14,070 --> 00:05:14,080
+we're just putting the movie name on the
+
+290
+00:05:14,080 --> 00:05:16,550
+we're just putting the movie name on the
+top and on the bottom we're we're adding
+
+291
+00:05:16,550 --> 00:05:16,560
+top and on the bottom we're we're adding
+
+292
+00:05:16,560 --> 00:05:17,189
+top and on the bottom we're we're adding
+the review
+
+293
+00:05:17,189 --> 00:05:17,199
+the review
+
+294
+00:05:17,199 --> 00:05:20,629
+the review
+as like a description so let me just
+
+295
+00:05:20,629 --> 00:05:20,639
+as like a description so let me just
+
+296
+00:05:20,639 --> 00:05:26,150
+as like a description so let me just
+create a paragraph tag and
+
+297
+00:05:26,150 --> 00:05:26,160
+
+
+298
+00:05:26,160 --> 00:05:29,189
+i'm gonna even erase the movie review
+
+299
+00:05:29,199 --> 00:05:32,070
+i'm gonna even erase the movie review
+uh label so let's look at this you can
+
+300
+00:05:32,070 --> 00:05:32,080
+uh label so let's look at this you can
+
+301
+00:05:32,080 --> 00:05:33,350
+uh label so let's look at this you can
+see this is basically how it's gonna
+
+302
+00:05:33,350 --> 00:05:33,360
+see this is basically how it's gonna
+
+303
+00:05:33,360 --> 00:05:33,670
+see this is basically how it's gonna
+look
+
+304
+00:05:33,670 --> 00:05:33,680
+look
+
+305
+00:05:33,680 --> 00:05:34,950
+look
+it's gonna have the title and on the
+
+306
+00:05:34,950 --> 00:05:34,960
+it's gonna have the title and on the
+
+307
+00:05:34,960 --> 00:05:36,950
+it's gonna have the title and on the
+bottom the the little review right
+
+308
+00:05:36,950 --> 00:05:36,960
+bottom the the little review right
+
+309
+00:05:36,960 --> 00:05:38,790
+bottom the the little review right
+but we're gonna make this look better so
+
+310
+00:05:38,790 --> 00:05:38,800
+but we're gonna make this look better so
+
+311
+00:05:38,800 --> 00:05:40,150
+but we're gonna make this look better so
+app.css
+
+312
+00:05:40,150 --> 00:05:40,160
+app.css
+
+313
+00:05:40,160 --> 00:05:44,150
+app.css
+i'm gonna grab here and call the card
+
+314
+00:05:44,150 --> 00:05:44,160
+i'm gonna grab here and call the card
+
+315
+00:05:44,160 --> 00:05:48,070
+i'm gonna grab here and call the card
+and make it um let me think a width
+
+316
+00:05:48,070 --> 00:05:48,080
+and make it um let me think a width
+
+317
+00:05:48,080 --> 00:05:51,510
+and make it um let me think a width
+of like 500 pixels
+
+318
+00:05:51,510 --> 00:05:51,520
+of like 500 pixels
+
+319
+00:05:51,520 --> 00:05:56,790
+of like 500 pixels
+then a height of like 150 pixels
+
+320
+00:05:56,790 --> 00:05:56,800
+then a height of like 150 pixels
+
+321
+00:05:56,800 --> 00:06:00,230
+then a height of like 150 pixels
+then some borders so border two pixels
+
+322
+00:06:00,230 --> 00:06:00,240
+then some borders so border two pixels
+
+323
+00:06:00,240 --> 00:06:01,029
+then some borders so border two pixels
+solid
+
+324
+00:06:01,029 --> 00:06:01,039
+solid
+
+325
+00:06:01,039 --> 00:06:04,469
+solid
+and black
+
+326
+00:06:04,469 --> 00:06:04,479
+and black
+
+327
+00:06:04,479 --> 00:06:06,469
+and black
+let's make it simple and let's add a
+
+328
+00:06:06,469 --> 00:06:06,479
+let's make it simple and let's add a
+
+329
+00:06:06,479 --> 00:06:08,150
+let's make it simple and let's add a
+border radius because i always think
+
+330
+00:06:08,150 --> 00:06:08,160
+border radius because i always think
+
+331
+00:06:08,160 --> 00:06:08,950
+border radius because i always think
+they look
+
+332
+00:06:08,950 --> 00:06:08,960
+they look
+
+333
+00:06:08,960 --> 00:06:12,230
+they look
+nice so border radius of like 15 pixels
+
+334
+00:06:12,230 --> 00:06:12,240
+nice so border radius of like 15 pixels
+
+335
+00:06:12,240 --> 00:06:14,629
+nice so border radius of like 15 pixels
+let's take a look at how it's looking
+
+336
+00:06:14,629 --> 00:06:14,639
+let's take a look at how it's looking
+
+337
+00:06:14,639 --> 00:06:15,670
+let's take a look at how it's looking
+it's a bit too big
+
+338
+00:06:15,670 --> 00:06:15,680
+it's a bit too big
+
+339
+00:06:15,680 --> 00:06:19,189
+it's a bit too big
+so i'm gonna make this a hundred
+
+340
+00:06:19,189 --> 00:06:19,199
+so i'm gonna make this a hundred
+
+341
+00:06:19,199 --> 00:06:23,270
+so i'm gonna make this a hundred
+and no actually 150 was looking
+
+342
+00:06:23,270 --> 00:06:23,280
+and no actually 150 was looking
+
+343
+00:06:23,280 --> 00:06:25,670
+and no actually 150 was looking
+now 120 and i'm adding a margin to this
+
+344
+00:06:25,670 --> 00:06:25,680
+now 120 and i'm adding a margin to this
+
+345
+00:06:25,680 --> 00:06:27,110
+now 120 and i'm adding a margin to this
+so margin
+
+346
+00:06:27,110 --> 00:06:27,120
+so margin
+
+347
+00:06:27,120 --> 00:06:30,469
+so margin
+of like 10 pixels okay
+
+348
+00:06:30,469 --> 00:06:30,479
+of like 10 pixels okay
+
+349
+00:06:30,479 --> 00:06:33,189
+of like 10 pixels okay
+it's looking cool um i'm thinking of
+
+350
+00:06:33,189 --> 00:06:33,199
+it's looking cool um i'm thinking of
+
+351
+00:06:33,199 --> 00:06:33,670
+it's looking cool um i'm thinking of
+maybe
+
+352
+00:06:33,670 --> 00:06:33,680
+maybe
+
+353
+00:06:33,680 --> 00:06:36,790
+maybe
+changing the the font just
+
+354
+00:06:36,790 --> 00:06:36,800
+changing the the font just
+
+355
+00:06:36,800 --> 00:06:39,830
+changing the the font just
+just so we can like add some style to it
+
+356
+00:06:39,830 --> 00:06:39,840
+just so we can like add some style to it
+
+357
+00:06:39,840 --> 00:06:40,150
+just so we can like add some style to it
+so
+
+358
+00:06:40,150 --> 00:06:40,160
+so
+
+359
+00:06:40,160 --> 00:06:43,830
+so
+font family
+
+360
+00:06:43,830 --> 00:06:43,840
+font family
+
+361
+00:06:43,840 --> 00:06:45,670
+font family
+and i'm gonna grab something over here
+
+362
+00:06:45,670 --> 00:06:45,680
+and i'm gonna grab something over here
+
+363
+00:06:45,680 --> 00:06:47,510
+and i'm gonna grab something over here
+i'm gonna use trebuchet i think this is
+
+364
+00:06:47,510 --> 00:06:47,520
+i'm gonna use trebuchet i think this is
+
+365
+00:06:47,520 --> 00:06:48,150
+i'm gonna use trebuchet i think this is
+the name
+
+366
+00:06:48,150 --> 00:06:48,160
+the name
+
+367
+00:06:48,160 --> 00:06:50,230
+the name
+i feel like this like i know this font
+
+368
+00:06:50,230 --> 00:06:50,240
+i feel like this like i know this font
+
+369
+00:06:50,240 --> 00:06:51,350
+i feel like this like i know this font
+is really cool so
+
+370
+00:06:51,350 --> 00:06:51,360
+is really cool so
+
+371
+00:06:51,360 --> 00:06:53,189
+is really cool so
+you can see that everything now looks
+
+372
+00:06:53,189 --> 00:06:53,199
+you can see that everything now looks
+
+373
+00:06:53,199 --> 00:06:55,589
+you can see that everything now looks
+pretty good and
+
+374
+00:06:55,589 --> 00:06:55,599
+pretty good and
+
+375
+00:06:55,599 --> 00:06:58,390
+pretty good and
+let me think what else we can do maybe
+
+376
+00:06:58,390 --> 00:06:58,400
+let me think what else we can do maybe
+
+377
+00:06:58,400 --> 00:06:59,990
+let me think what else we can do maybe
+now we need to add the two buttons right
+
+378
+00:06:59,990 --> 00:07:00,000
+now we need to add the two buttons right
+
+379
+00:07:00,000 --> 00:07:01,830
+now we need to add the two buttons right
+the button for delete and the button for
+
+380
+00:07:01,830 --> 00:07:01,840
+the button for delete and the button for
+
+381
+00:07:01,840 --> 00:07:05,350
+the button for delete and the button for
+update so let's come to the bottom here
+
+382
+00:07:05,350 --> 00:07:05,360
+update so let's come to the bottom here
+
+383
+00:07:05,360 --> 00:07:11,510
+update so let's come to the bottom here
+and edit button
+
+384
+00:07:11,510 --> 00:07:11,520
+
+
+385
+00:07:11,520 --> 00:07:14,629
+delete and
+
+386
+00:07:14,639 --> 00:07:16,950
+delete and
+let's add another but let's actually add
+
+387
+00:07:16,950 --> 00:07:16,960
+let's add another but let's actually add
+
+388
+00:07:16,960 --> 00:07:18,550
+let's add another but let's actually add
+a um
+
+389
+00:07:18,550 --> 00:07:18,560
+a um
+
+390
+00:07:18,560 --> 00:07:20,790
+a um
+how do i say this let's just add an
+
+391
+00:07:20,790 --> 00:07:20,800
+how do i say this let's just add an
+
+392
+00:07:20,800 --> 00:07:21,670
+how do i say this let's just add an
+input right
+
+393
+00:07:21,670 --> 00:07:21,680
+input right
+
+394
+00:07:21,680 --> 00:07:28,830
+input right
+so input with type
+
+395
+00:07:28,830 --> 00:07:28,840
+
+
+396
+00:07:28,840 --> 00:07:30,469
+text
+
+397
+00:07:30,479 --> 00:07:32,629
+text
+and this is going to be the update input
+
+398
+00:07:32,629 --> 00:07:32,639
+and this is going to be the update input
+
+399
+00:07:32,639 --> 00:07:34,309
+and this is going to be the update input
+so whatever right here is
+
+400
+00:07:34,309 --> 00:07:34,319
+so whatever right here is
+
+401
+00:07:34,319 --> 00:07:36,629
+so whatever right here is
+basically going to be whatever we want
+
+402
+00:07:36,629 --> 00:07:36,639
+basically going to be whatever we want
+
+403
+00:07:36,639 --> 00:07:37,430
+basically going to be whatever we want
+to change
+
+404
+00:07:37,430 --> 00:07:37,440
+to change
+
+405
+00:07:37,440 --> 00:07:38,790
+to change
+and we're only going to be able to
+
+406
+00:07:38,790 --> 00:07:38,800
+and we're only going to be able to
+
+407
+00:07:38,800 --> 00:07:40,390
+and we're only going to be able to
+change the movie review i'm not going to
+
+408
+00:07:40,390 --> 00:07:40,400
+change the movie review i'm not going to
+
+409
+00:07:40,400 --> 00:07:41,270
+change the movie review i'm not going to
+make it so that
+
+410
+00:07:41,270 --> 00:07:41,280
+make it so that
+
+411
+00:07:41,280 --> 00:07:42,950
+make it so that
+you can update the title because that
+
+412
+00:07:42,950 --> 00:07:42,960
+you can update the title because that
+
+413
+00:07:42,960 --> 00:07:44,550
+you can update the title because that
+doesn't make like that doesn't make
+
+414
+00:07:44,550 --> 00:07:44,560
+doesn't make like that doesn't make
+
+415
+00:07:44,560 --> 00:07:45,189
+doesn't make like that doesn't make
+sense
+
+416
+00:07:45,189 --> 00:07:45,199
+sense
+
+417
+00:07:45,199 --> 00:07:48,950
+sense
+so and this button is going to be update
+
+418
+00:07:48,950 --> 00:07:48,960
+so and this button is going to be update
+
+419
+00:07:48,960 --> 00:07:51,350
+so and this button is going to be update
+okay let's look how it looks it looks
+
+420
+00:07:51,350 --> 00:07:51,360
+okay let's look how it looks it looks
+
+421
+00:07:51,360 --> 00:07:52,309
+okay let's look how it looks it looks
+pretty horrible
+
+422
+00:07:52,309 --> 00:07:52,319
+pretty horrible
+
+423
+00:07:52,319 --> 00:07:54,790
+pretty horrible
+you know why because we need to grab the
+
+424
+00:07:54,790 --> 00:07:54,800
+you know why because we need to grab the
+
+425
+00:07:54,800 --> 00:07:55,510
+you know why because we need to grab the
+it's not like
+
+426
+00:07:55,510 --> 00:07:55,520
+it's not like
+
+427
+00:07:55,520 --> 00:07:57,350
+it's not like
+it's basically making the input huge
+
+428
+00:07:57,350 --> 00:07:57,360
+it's basically making the input huge
+
+429
+00:07:57,360 --> 00:07:58,950
+it's basically making the input huge
+because i set the inputs here
+
+430
+00:07:58,950 --> 00:07:58,960
+because i set the inputs here
+
+431
+00:07:58,960 --> 00:08:01,430
+because i set the inputs here
+to be huge so that this looks good so
+
+432
+00:08:01,430 --> 00:08:01,440
+to be huge so that this looks good so
+
+433
+00:08:01,440 --> 00:08:02,869
+to be huge so that this looks good so
+what i'm going to do is i'm going to add
+
+434
+00:08:02,869 --> 00:08:02,879
+what i'm going to do is i'm going to add
+
+435
+00:08:02,879 --> 00:08:04,070
+what i'm going to do is i'm going to add
+an id for this
+
+436
+00:08:04,070 --> 00:08:04,080
+an id for this
+
+437
+00:08:04,080 --> 00:08:07,510
+an id for this
+so um
+
+438
+00:08:07,510 --> 00:08:07,520
+
+
+439
+00:08:07,520 --> 00:08:10,710
+id and this id is basically going to be
+
+440
+00:08:10,720 --> 00:08:11,029
+id and this id is basically going to be
+the
+
+441
+00:08:11,029 --> 00:08:11,039
+the
+
+442
+00:08:11,039 --> 00:08:14,469
+the
+update input and we're going to style it
+
+443
+00:08:14,469 --> 00:08:14,479
+update input and we're going to style it
+
+444
+00:08:14,479 --> 00:08:17,350
+update input and we're going to style it
+on our own so if we come here
+
+445
+00:08:17,350 --> 00:08:17,360
+on our own so if we come here
+
+446
+00:08:17,360 --> 00:08:20,469
+on our own so if we come here
+and write update
+
+447
+00:08:20,469 --> 00:08:20,479
+and write update
+
+448
+00:08:20,479 --> 00:08:23,749
+and write update
+input and let me say
+
+449
+00:08:23,749 --> 00:08:23,759
+input and let me say
+
+450
+00:08:23,759 --> 00:08:27,990
+input and let me say
+width is equal to like 100 pixels maybe
+
+451
+00:08:27,990 --> 00:08:28,000
+width is equal to like 100 pixels maybe
+
+452
+00:08:28,000 --> 00:08:29,189
+width is equal to like 100 pixels maybe
+something like that
+
+453
+00:08:29,189 --> 00:08:29,199
+something like that
+
+454
+00:08:29,199 --> 00:08:31,110
+something like that
+and height is equal to something small
+
+455
+00:08:31,110 --> 00:08:31,120
+and height is equal to something small
+
+456
+00:08:31,120 --> 00:08:34,469
+and height is equal to something small
+like 30 pixels
+
+457
+00:08:34,469 --> 00:08:34,479
+like 30 pixels
+
+458
+00:08:34,479 --> 00:08:37,350
+like 30 pixels
+um let's look how it looks um it's still
+
+459
+00:08:37,350 --> 00:08:37,360
+um let's look how it looks um it's still
+
+460
+00:08:37,360 --> 00:08:38,230
+um let's look how it looks um it's still
+pretty
+
+461
+00:08:38,230 --> 00:08:38,240
+pretty
+
+462
+00:08:38,240 --> 00:08:41,828
+pretty
+not that good i need to increase maybe
+
+463
+00:08:41,828 --> 00:08:41,839
+not that good i need to increase maybe
+
+464
+00:08:41,839 --> 00:08:42,948
+not that good i need to increase maybe
+the size of the
+
+465
+00:08:42,948 --> 00:08:42,958
+the size of the
+
+466
+00:08:42,958 --> 00:08:46,070
+the size of the
+the card yeah i'm gonna make this 150
+
+467
+00:08:46,070 --> 00:08:46,080
+the card yeah i'm gonna make this 150
+
+468
+00:08:46,080 --> 00:08:46,790
+the card yeah i'm gonna make this 150
+again
+
+469
+00:08:46,790 --> 00:08:46,800
+again
+
+470
+00:08:46,800 --> 00:08:48,870
+again
+let's see how it looks now
+
+471
+00:08:48,870 --> 00:08:48,880
+let's see how it looks now
+
+472
+00:08:48,880 --> 00:08:50,790
+let's see how it looks now
+[Music]
+
+473
+00:08:50,790 --> 00:08:50,800
+[Music]
+
+474
+00:08:50,800 --> 00:08:56,070
+[Music]
+it still doesn't look good maybe
+
+475
+00:08:56,070 --> 00:08:56,080
+
+
+476
+00:08:56,080 --> 00:08:59,110
+decrease the size of of these things
+
+477
+00:08:59,120 --> 00:09:04,630
+decrease the size of of these things
+make this 20 um and add a margin to this
+
+478
+00:09:04,630 --> 00:09:04,640
+make this 20 um and add a margin to this
+
+479
+00:09:04,640 --> 00:09:08,949
+make this 20 um and add a margin to this
+a margin bottom so
+
+480
+00:09:08,949 --> 00:09:08,959
+a margin bottom so
+
+481
+00:09:08,959 --> 00:09:13,350
+a margin bottom so
+margin bottom of like 10 pixels
+
+482
+00:09:13,350 --> 00:09:13,360
+margin bottom of like 10 pixels
+
+483
+00:09:13,360 --> 00:09:15,430
+margin bottom of like 10 pixels
+let's see how it looks it's still the
+
+484
+00:09:15,430 --> 00:09:15,440
+let's see how it looks it's still the
+
+485
+00:09:15,440 --> 00:09:17,389
+let's see how it looks it's still the
+same so i'm gonna just increase this to
+
+486
+00:09:17,389 --> 00:09:17,399
+same so i'm gonna just increase this to
+
+487
+00:09:17,399 --> 00:09:18,949
+same so i'm gonna just increase this to
+170 and
+
+488
+00:09:18,949 --> 00:09:18,959
+170 and
+
+489
+00:09:18,959 --> 00:09:21,269
+170 and
+i think this this should be good yeah so
+
+490
+00:09:21,269 --> 00:09:21,279
+i think this this should be good yeah so
+
+491
+00:09:21,279 --> 00:09:22,790
+i think this this should be good yeah so
+we have our delete button we have our
+
+492
+00:09:22,790 --> 00:09:22,800
+we have our delete button we have our
+
+493
+00:09:22,800 --> 00:09:23,590
+we have our delete button we have our
+update but
+
+494
+00:09:23,590 --> 00:09:23,600
+update but
+
+495
+00:09:23,600 --> 00:09:25,750
+update but
+our update input and our update button
+
+496
+00:09:25,750 --> 00:09:25,760
+our update input and our update button
+
+497
+00:09:25,760 --> 00:09:27,269
+our update input and our update button
+right so
+
+498
+00:09:27,269 --> 00:09:27,279
+right so
+
+499
+00:09:27,279 --> 00:09:28,710
+right so
+let's make it so that whenever you click
+
+500
+00:09:28,710 --> 00:09:28,720
+let's make it so that whenever you click
+
+501
+00:09:28,720 --> 00:09:31,829
+let's make it so that whenever you click
+delete you can delete everything here
+
+502
+00:09:31,829 --> 00:09:31,839
+delete you can delete everything here
+
+503
+00:09:31,839 --> 00:09:34,310
+delete you can delete everything here
+so let's come here and create a function
+
+504
+00:09:34,310 --> 00:09:34,320
+so let's come here and create a function
+
+505
+00:09:34,320 --> 00:09:36,230
+so let's come here and create a function
+called delete review
+
+506
+00:09:36,230 --> 00:09:36,240
+called delete review
+
+507
+00:09:36,240 --> 00:09:40,470
+called delete review
+const delete review
+
+508
+00:09:40,470 --> 00:09:40,480
+const delete review
+
+509
+00:09:40,480 --> 00:09:43,670
+const delete review
+equal to like the arrow syntax
+
+510
+00:09:43,670 --> 00:09:43,680
+equal to like the arrow syntax
+
+511
+00:09:43,680 --> 00:09:49,110
+equal to like the arrow syntax
+and let's make an x use dot
+
+512
+00:09:49,110 --> 00:09:49,120
+
+
+513
+00:09:49,120 --> 00:09:52,389
+delete request and instead of here we're
+
+514
+00:09:52,399 --> 00:09:53,509
+delete request and instead of here we're
+going to set our url
+
+515
+00:09:53,509 --> 00:09:53,519
+going to set our url
+
+516
+00:09:53,519 --> 00:09:57,110
+going to set our url
+i'm going to just copy this and
+
+517
+00:09:57,110 --> 00:09:57,120
+i'm going to just copy this and
+
+518
+00:09:57,120 --> 00:09:58,389
+i'm going to just copy this and
+set it right here we're going to set it
+
+519
+00:09:58,389 --> 00:09:58,399
+set it right here we're going to set it
+
+520
+00:09:58,399 --> 00:10:00,790
+set it right here we're going to set it
+equal to a slash api
+
+521
+00:10:00,790 --> 00:10:00,800
+equal to a slash api
+
+522
+00:10:00,800 --> 00:10:02,230
+equal to a slash api
+slash delete because we're going to
+
+523
+00:10:02,230 --> 00:10:02,240
+slash delete because we're going to
+
+524
+00:10:02,240 --> 00:10:04,069
+slash delete because we're going to
+create that and
+
+525
+00:10:04,069 --> 00:10:04,079
+create that and
+
+526
+00:10:04,079 --> 00:10:08,069
+create that and
+let's send a variable maybe just the
+
+527
+00:10:08,069 --> 00:10:08,079
+let's send a variable maybe just the
+
+528
+00:10:08,079 --> 00:10:13,269
+let's send a variable maybe just the
+the movie name movie name
+
+529
+00:10:13,269 --> 00:10:13,279
+
+
+530
+00:10:13,279 --> 00:10:16,790
+and now actually i'm thinking the idea
+
+531
+00:10:16,800 --> 00:10:17,430
+and now actually i'm thinking the idea
+right
+
+532
+00:10:17,430 --> 00:10:17,440
+right
+
+533
+00:10:17,440 --> 00:10:19,269
+right
+no but we're not setting the id okay so
+
+534
+00:10:19,269 --> 00:10:19,279
+no but we're not setting the id okay so
+
+535
+00:10:19,279 --> 00:10:21,190
+no but we're not setting the id okay so
+let's just send the movie name
+
+536
+00:10:21,190 --> 00:10:21,200
+let's just send the movie name
+
+537
+00:10:21,200 --> 00:10:24,550
+let's just send the movie name
+and that should be good
+
+538
+00:10:24,550 --> 00:10:24,560
+and that should be good
+
+539
+00:10:24,560 --> 00:10:27,030
+and that should be good
+so let's go to our back end and let's
+
+540
+00:10:27,030 --> 00:10:27,040
+so let's go to our back end and let's
+
+541
+00:10:27,040 --> 00:10:28,670
+so let's go to our back end and let's
+create a
+
+542
+00:10:28,670 --> 00:10:28,680
+create a
+
+543
+00:10:28,680 --> 00:10:32,829
+create a
+app.delete api endpoint right so
+
+544
+00:10:32,829 --> 00:10:32,839
+app.delete api endpoint right so
+
+545
+00:10:32,839 --> 00:10:35,750
+app.delete api endpoint right so
+app.delete
+
+546
+00:10:35,750 --> 00:10:35,760
+app.delete
+
+547
+00:10:35,760 --> 00:10:37,910
+app.delete
+and this is going to be as we mentioned
+
+548
+00:10:37,910 --> 00:10:37,920
+and this is going to be as we mentioned
+
+549
+00:10:37,920 --> 00:10:39,670
+and this is going to be as we mentioned
+before slash
+
+550
+00:10:39,670 --> 00:10:39,680
+before slash
+
+551
+00:10:39,680 --> 00:10:43,269
+before slash
+api slash delete and there's going to be
+
+552
+00:10:43,269 --> 00:10:43,279
+api slash delete and there's going to be
+
+553
+00:10:43,279 --> 00:10:43,670
+api slash delete and there's going to be
+a
+
+554
+00:10:43,670 --> 00:10:43,680
+a
+
+555
+00:10:43,680 --> 00:10:46,949
+a
+require a response
+
+556
+00:10:46,949 --> 00:10:46,959
+require a response
+
+557
+00:10:46,959 --> 00:10:50,310
+require a response
+and we're going to create a function out
+
+558
+00:10:50,310 --> 00:10:50,320
+and we're going to create a function out
+
+559
+00:10:50,320 --> 00:10:51,590
+and we're going to create a function out
+of it so we're going to grab
+
+560
+00:10:51,590 --> 00:10:51,600
+of it so we're going to grab
+
+561
+00:10:51,600 --> 00:10:55,430
+of it so we're going to grab
+first the the movie name so const name
+
+562
+00:10:55,430 --> 00:10:55,440
+first the the movie name so const name
+
+563
+00:10:55,440 --> 00:11:00,710
+first the the movie name so const name
+equal to rec the body dot movie name
+
+564
+00:11:00,710 --> 00:11:00,720
+equal to rec the body dot movie name
+
+565
+00:11:00,720 --> 00:11:03,750
+equal to rec the body dot movie name
+and let's create the
+
+566
+00:11:03,750 --> 00:11:03,760
+and let's create the
+
+567
+00:11:03,760 --> 00:11:06,790
+and let's create the
+sql syntax for this right
+
+568
+00:11:06,790 --> 00:11:06,800
+sql syntax for this right
+
+569
+00:11:06,800 --> 00:11:10,550
+sql syntax for this right
+so let's come here and
+
+570
+00:11:10,550 --> 00:11:10,560
+so let's come here and
+
+571
+00:11:10,560 --> 00:11:12,829
+so let's come here and
+insert into movie we're gonna change
+
+572
+00:11:12,829 --> 00:11:12,839
+insert into movie we're gonna change
+
+573
+00:11:12,839 --> 00:11:14,230
+insert into movie we're gonna change
+this
+
+574
+00:11:14,230 --> 00:11:14,240
+this
+
+575
+00:11:14,240 --> 00:11:17,269
+this
+basically this is going to be delete
+
+576
+00:11:17,269 --> 00:11:17,279
+basically this is going to be delete
+
+577
+00:11:17,279 --> 00:11:20,310
+basically this is going to be delete
+from the name of the database
+
+578
+00:11:20,310 --> 00:11:20,320
+from the name of the database
+
+579
+00:11:20,320 --> 00:11:25,190
+from the name of the database
+the name of the table so movie reviews
+
+580
+00:11:25,190 --> 00:11:25,200
+the name of the table so movie reviews
+
+581
+00:11:25,200 --> 00:11:28,389
+the name of the table so movie reviews
+and where
+
+582
+00:11:28,389 --> 00:11:28,399
+and where
+
+583
+00:11:28,399 --> 00:11:30,069
+and where
+and this is the case right so where
+
+584
+00:11:30,069 --> 00:11:30,079
+and this is the case right so where
+
+585
+00:11:30,079 --> 00:11:31,990
+and this is the case right so where
+movie name equal to whatever we're
+
+586
+00:11:31,990 --> 00:11:32,000
+movie name equal to whatever we're
+
+587
+00:11:32,000 --> 00:11:33,030
+movie name equal to whatever we're
+setting right so
+
+588
+00:11:33,030 --> 00:11:33,040
+setting right so
+
+589
+00:11:33,040 --> 00:11:36,389
+setting right so
+let's grab movie name and i'm going to
+
+590
+00:11:36,389 --> 00:11:36,399
+let's grab movie name and i'm going to
+
+591
+00:11:36,399 --> 00:11:37,430
+let's grab movie name and i'm going to
+explain this better
+
+592
+00:11:37,430 --> 00:11:37,440
+explain this better
+
+593
+00:11:37,440 --> 00:11:39,670
+explain this better
+movie name equal to question mark so
+
+594
+00:11:39,670 --> 00:11:39,680
+movie name equal to question mark so
+
+595
+00:11:39,680 --> 00:11:41,590
+movie name equal to question mark so
+basically what we're saying here is
+
+596
+00:11:41,590 --> 00:11:41,600
+basically what we're saying here is
+
+597
+00:11:41,600 --> 00:11:44,310
+basically what we're saying here is
+delete from the table where the movie
+
+598
+00:11:44,310 --> 00:11:44,320
+delete from the table where the movie
+
+599
+00:11:44,320 --> 00:11:45,110
+delete from the table where the movie
+name
+
+600
+00:11:45,110 --> 00:11:45,120
+name
+
+601
+00:11:45,120 --> 00:11:47,509
+name
+is equal to the movie name that we set
+
+602
+00:11:47,509 --> 00:11:47,519
+is equal to the movie name that we set
+
+603
+00:11:47,519 --> 00:11:48,310
+is equal to the movie name that we set
+over here so
+
+604
+00:11:48,310 --> 00:11:48,320
+over here so
+
+605
+00:11:48,320 --> 00:11:50,550
+over here so
+we're deleting whatever movie has this
+
+606
+00:11:50,550 --> 00:11:50,560
+we're deleting whatever movie has this
+
+607
+00:11:50,560 --> 00:11:52,949
+we're deleting whatever movie has this
+name and
+
+608
+00:11:52,949 --> 00:11:52,959
+name and
+
+609
+00:11:52,959 --> 00:11:55,269
+name and
+if we come here the reason why we're
+
+610
+00:11:55,269 --> 00:11:55,279
+if we come here the reason why we're
+
+611
+00:11:55,279 --> 00:11:56,150
+if we come here the reason why we're
+putting a question
+
+612
+00:11:56,150 --> 00:11:56,160
+putting a question
+
+613
+00:11:56,160 --> 00:11:58,150
+putting a question
+mark as i said in the last video is so
+
+614
+00:11:58,150 --> 00:11:58,160
+mark as i said in the last video is so
+
+615
+00:11:58,160 --> 00:11:59,670
+mark as i said in the last video is so
+that we can sanitize our input so
+
+616
+00:11:59,670 --> 00:11:59,680
+that we can sanitize our input so
+
+617
+00:11:59,680 --> 00:12:00,310
+that we can sanitize our input so
+basically
+
+618
+00:12:00,310 --> 00:12:00,320
+basically
+
+619
+00:12:00,320 --> 00:12:02,069
+basically
+we can just set the variable here
+
+620
+00:12:02,069 --> 00:12:02,079
+we can just set the variable here
+
+621
+00:12:02,079 --> 00:12:03,350
+we can just set the variable here
+instead of directly
+
+622
+00:12:03,350 --> 00:12:03,360
+instead of directly
+
+623
+00:12:03,360 --> 00:12:06,230
+instead of directly
+inside of the the string and this is
+
+624
+00:12:06,230 --> 00:12:06,240
+inside of the the string and this is
+
+625
+00:12:06,240 --> 00:12:07,750
+inside of the the string and this is
+important for
+
+626
+00:12:07,750 --> 00:12:07,760
+important for
+
+627
+00:12:07,760 --> 00:12:10,470
+important for
+for various different reasons so if i
+
+628
+00:12:10,470 --> 00:12:10,480
+for various different reasons so if i
+
+629
+00:12:10,480 --> 00:12:11,870
+for various different reasons so if i
+come here and put
+
+630
+00:12:11,870 --> 00:12:11,880
+come here and put
+
+631
+00:12:11,880 --> 00:12:14,710
+come here and put
+database.query and i add
+
+632
+00:12:14,710 --> 00:12:14,720
+database.query and i add
+
+633
+00:12:14,720 --> 00:12:16,790
+database.query and i add
+the sql oh i'm going to change this name
+
+634
+00:12:16,790 --> 00:12:16,800
+the sql oh i'm going to change this name
+
+635
+00:12:16,800 --> 00:12:17,829
+the sql oh i'm going to change this name
+so ask
+
+636
+00:12:17,829 --> 00:12:17,839
+so ask
+
+637
+00:12:17,839 --> 00:12:22,550
+so ask
+ql delete and i add this variable here
+
+638
+00:12:22,550 --> 00:12:22,560
+ql delete and i add this variable here
+
+639
+00:12:22,560 --> 00:12:25,110
+ql delete and i add this variable here
+and then on the side i add the name and
+
+640
+00:12:25,110 --> 00:12:25,120
+and then on the side i add the name and
+
+641
+00:12:25,120 --> 00:12:26,389
+and then on the side i add the name and
+as you can see like
+
+642
+00:12:26,389 --> 00:12:26,399
+as you can see like
+
+643
+00:12:26,399 --> 00:12:28,550
+as you can see like
+since this is only taking one variable i
+
+644
+00:12:28,550 --> 00:12:28,560
+since this is only taking one variable i
+
+645
+00:12:28,560 --> 00:12:29,670
+since this is only taking one variable i
+don't need to create a
+
+646
+00:12:29,670 --> 00:12:29,680
+don't need to create a
+
+647
+00:12:29,680 --> 00:12:31,190
+don't need to create a
+an array like i created last time
+
+648
+00:12:31,190 --> 00:12:31,200
+an array like i created last time
+
+649
+00:12:31,200 --> 00:12:33,110
+an array like i created last time
+because this time i was setting two
+
+650
+00:12:33,110 --> 00:12:33,120
+because this time i was setting two
+
+651
+00:12:33,120 --> 00:12:34,550
+because this time i was setting two
+variables two question marks and this
+
+652
+00:12:34,550 --> 00:12:34,560
+variables two question marks and this
+
+653
+00:12:34,560 --> 00:12:35,990
+variables two question marks and this
+one i'm only setting once
+
+654
+00:12:35,990 --> 00:12:36,000
+one i'm only setting once
+
+655
+00:12:36,000 --> 00:12:38,629
+one i'm only setting once
+and that also comes into place when i'm
+
+656
+00:12:38,629 --> 00:12:38,639
+and that also comes into place when i'm
+
+657
+00:12:38,639 --> 00:12:39,910
+and that also comes into place when i'm
+when i'm sending
+
+658
+00:12:39,910 --> 00:12:39,920
+when i'm sending
+
+659
+00:12:39,920 --> 00:12:42,310
+when i'm sending
+the data through the access request as
+
+660
+00:12:42,310 --> 00:12:42,320
+the data through the access request as
+
+661
+00:12:42,320 --> 00:12:43,350
+the data through the access request as
+you can see on the
+
+662
+00:12:43,350 --> 00:12:43,360
+you can see on the
+
+663
+00:12:43,360 --> 00:12:45,590
+you can see on the
+actual stop post where we inserted data
+
+664
+00:12:45,590 --> 00:12:45,600
+actual stop post where we inserted data
+
+665
+00:12:45,600 --> 00:12:46,550
+actual stop post where we inserted data
+into the database
+
+666
+00:12:46,550 --> 00:12:46,560
+into the database
+
+667
+00:12:46,560 --> 00:12:48,310
+into the database
+we're sending two pieces of information
+
+668
+00:12:48,310 --> 00:12:48,320
+we're sending two pieces of information
+
+669
+00:12:48,320 --> 00:12:49,750
+we're sending two pieces of information
+the movie name and the movie review
+
+670
+00:12:49,750 --> 00:12:49,760
+the movie name and the movie review
+
+671
+00:12:49,760 --> 00:12:51,590
+the movie name and the movie review
+that's why we created an object but in
+
+672
+00:12:51,590 --> 00:12:51,600
+that's why we created an object but in
+
+673
+00:12:51,600 --> 00:12:53,350
+that's why we created an object but in
+this case we're only setting
+
+674
+00:12:53,350 --> 00:12:53,360
+this case we're only setting
+
+675
+00:12:53,360 --> 00:12:56,790
+this case we're only setting
+uh one object one one variable which is
+
+676
+00:12:56,790 --> 00:12:56,800
+uh one object one one variable which is
+
+677
+00:12:56,800 --> 00:12:57,990
+uh one object one one variable which is
+the movie name so we don't really need
+
+678
+00:12:57,990 --> 00:12:58,000
+the movie name so we don't really need
+
+679
+00:12:58,000 --> 00:12:59,509
+the movie name so we don't really need
+to create an object out of it
+
+680
+00:12:59,509 --> 00:12:59,519
+to create an object out of it
+
+681
+00:12:59,519 --> 00:13:01,030
+to create an object out of it
+so now we have this function right here
+
+682
+00:13:01,030 --> 00:13:01,040
+so now we have this function right here
+
+683
+00:13:01,040 --> 00:13:02,870
+so now we have this function right here
+right so we have the delete review
+
+684
+00:13:02,870 --> 00:13:02,880
+right so we have the delete review
+
+685
+00:13:02,880 --> 00:13:06,069
+right so we have the delete review
+and we created the app.delete
+
+686
+00:13:06,069 --> 00:13:06,079
+and we created the app.delete
+
+687
+00:13:06,079 --> 00:13:09,509
+and we created the app.delete
+route on the back end we just need to
+
+688
+00:13:09,509 --> 00:13:09,519
+route on the back end we just need to
+
+689
+00:13:09,519 --> 00:13:14,230
+route on the back end we just need to
+then set a a function out of this so
+
+690
+00:13:14,230 --> 00:13:14,240
+then set a a function out of this so
+
+691
+00:13:14,240 --> 00:13:19,509
+then set a a function out of this so
+error results and
+
+692
+00:13:19,509 --> 00:13:19,519
+
+
+693
+00:13:19,519 --> 00:13:21,829
+let's grab this information and i'm also
+
+694
+00:13:21,839 --> 00:13:23,269
+let's grab this information and i'm also
+going to do this
+
+695
+00:13:23,269 --> 00:13:23,279
+going to do this
+
+696
+00:13:23,279 --> 00:13:25,269
+going to do this
+so inside of here if we have any error
+
+697
+00:13:25,269 --> 00:13:25,279
+so inside of here if we have any error
+
+698
+00:13:25,279 --> 00:13:26,400
+so inside of here if we have any error
+let's console.log
+
+699
+00:13:26,400 --> 00:13:26,410
+let's console.log
+
+700
+00:13:26,410 --> 00:13:27,750
+let's console.log
+[Music]
+
+701
+00:13:27,750 --> 00:13:27,760
+[Music]
+
+702
+00:13:27,760 --> 00:13:30,949
+[Music]
+the error and let's
+
+703
+00:13:30,949 --> 00:13:30,959
+the error and let's
+
+704
+00:13:30,959 --> 00:13:34,389
+the error and let's
+only do this if there is any error so
+
+705
+00:13:34,389 --> 00:13:34,399
+only do this if there is any error so
+
+706
+00:13:34,399 --> 00:13:38,710
+only do this if there is any error so
+um if error then do this
+
+707
+00:13:38,710 --> 00:13:38,720
+um if error then do this
+
+708
+00:13:38,720 --> 00:13:42,790
+um if error then do this
+and let's see what happens right so we
+
+709
+00:13:42,790 --> 00:13:42,800
+and let's see what happens right so we
+
+710
+00:13:42,800 --> 00:13:44,069
+and let's see what happens right so we
+have the endpoint
+
+711
+00:13:44,069 --> 00:13:44,079
+have the endpoint
+
+712
+00:13:44,079 --> 00:13:46,310
+have the endpoint
+and we come here and we do this we just
+
+713
+00:13:46,310 --> 00:13:46,320
+and we come here and we do this we just
+
+714
+00:13:46,320 --> 00:13:47,990
+and we come here and we do this we just
+need to set the delete review
+
+715
+00:13:47,990 --> 00:13:48,000
+need to set the delete review
+
+716
+00:13:48,000 --> 00:13:50,230
+need to set the delete review
+whenever we click the button so let's
+
+717
+00:13:50,230 --> 00:13:50,240
+whenever we click the button so let's
+
+718
+00:13:50,240 --> 00:13:51,430
+whenever we click the button so let's
+come to the delete button
+
+719
+00:13:51,430 --> 00:13:51,440
+come to the delete button
+
+720
+00:13:51,440 --> 00:13:56,389
+come to the delete button
+and press on click equal to
+
+721
+00:13:56,389 --> 00:13:56,399
+and press on click equal to
+
+722
+00:13:56,399 --> 00:13:59,829
+and press on click equal to
+delete review right so for example if
+
+723
+00:13:59,829 --> 00:13:59,839
+delete review right so for example if
+
+724
+00:13:59,839 --> 00:14:00,870
+delete review right so for example if
+i'm trying to delete
+
+725
+00:14:00,870 --> 00:14:00,880
+i'm trying to delete
+
+726
+00:14:00,880 --> 00:14:04,310
+i'm trying to delete
+the this review right here
+
+727
+00:14:04,310 --> 00:14:04,320
+the this review right here
+
+728
+00:14:04,320 --> 00:14:06,230
+the this review right here
+i can just come here and press delete
+
+729
+00:14:06,230 --> 00:14:06,240
+i can just come here and press delete
+
+730
+00:14:06,240 --> 00:14:09,670
+i can just come here and press delete
+and when i refresh the page
+
+731
+00:14:09,670 --> 00:14:09,680
+
+
+732
+00:14:09,680 --> 00:14:11,750
+nothing happens let's see what error
+
+733
+00:14:11,760 --> 00:14:14,069
+nothing happens let's see what error
+appeared so i get what's happening
+
+734
+00:14:14,069 --> 00:14:14,079
+appeared so i get what's happening
+
+735
+00:14:14,079 --> 00:14:17,110
+appeared so i get what's happening
+basically we we can't just set an object
+
+736
+00:14:17,110 --> 00:14:17,120
+basically we we can't just set an object
+
+737
+00:14:17,120 --> 00:14:17,910
+basically we we can't just set an object
+like this
+
+738
+00:14:17,910 --> 00:14:17,920
+like this
+
+739
+00:14:17,920 --> 00:14:19,350
+like this
+we're going to try to send the object
+
+740
+00:14:19,350 --> 00:14:19,360
+we're going to try to send the object
+
+741
+00:14:19,360 --> 00:14:20,949
+we're going to try to send the object
+through the parameters of
+
+742
+00:14:20,949 --> 00:14:20,959
+through the parameters of
+
+743
+00:14:20,959 --> 00:14:23,509
+through the parameters of
+the url itself right so basically
+
+744
+00:14:23,509 --> 00:14:23,519
+the url itself right so basically
+
+745
+00:14:23,519 --> 00:14:25,110
+the url itself right so basically
+instead of just calling it slash api
+
+746
+00:14:25,110 --> 00:14:25,120
+instead of just calling it slash api
+
+747
+00:14:25,120 --> 00:14:25,990
+instead of just calling it slash api
+slash delete
+
+748
+00:14:25,990 --> 00:14:26,000
+slash delete
+
+749
+00:14:26,000 --> 00:14:29,110
+slash delete
+we're going to call slash api slash a
+
+750
+00:14:29,110 --> 00:14:29,120
+we're going to call slash api slash a
+
+751
+00:14:29,120 --> 00:14:30,629
+we're going to call slash api slash a
+variable and we're going to pass the
+
+752
+00:14:30,629 --> 00:14:30,639
+variable and we're going to pass the
+
+753
+00:14:30,639 --> 00:14:32,629
+variable and we're going to pass the
+variable directly on the route and this
+
+754
+00:14:32,629 --> 00:14:32,639
+variable directly on the route and this
+
+755
+00:14:32,639 --> 00:14:34,710
+variable directly on the route and this
+variable is going to be the movie name
+
+756
+00:14:34,710 --> 00:14:34,720
+variable is going to be the movie name
+
+757
+00:14:34,720 --> 00:14:37,910
+variable is going to be the movie name
+so i'm going to remove this and
+
+758
+00:14:37,910 --> 00:14:37,920
+so i'm going to remove this and
+
+759
+00:14:37,920 --> 00:14:40,230
+so i'm going to remove this and
+i'm going to even change this quotes to
+
+760
+00:14:40,230 --> 00:14:40,240
+i'm going to even change this quotes to
+
+761
+00:14:40,240 --> 00:14:42,550
+i'm going to even change this quotes to
+become
+
+762
+00:14:42,550 --> 00:14:42,560
+become
+
+763
+00:14:42,560 --> 00:14:44,710
+become
+this this type of quote because then we
+
+764
+00:14:44,710 --> 00:14:44,720
+this this type of quote because then we
+
+765
+00:14:44,720 --> 00:14:46,629
+this this type of quote because then we
+can pass variables inside of this
+
+766
+00:14:46,629 --> 00:14:46,639
+can pass variables inside of this
+
+767
+00:14:46,639 --> 00:14:48,470
+can pass variables inside of this
+and inside of here we're going to set
+
+768
+00:14:48,470 --> 00:14:48,480
+and inside of here we're going to set
+
+769
+00:14:48,480 --> 00:14:49,670
+and inside of here we're going to set
+the movie name
+
+770
+00:14:49,670 --> 00:14:49,680
+the movie name
+
+771
+00:14:49,680 --> 00:14:51,910
+the movie name
+but i just realized something as well i
+
+772
+00:14:51,910 --> 00:14:51,920
+but i just realized something as well i
+
+773
+00:14:51,920 --> 00:14:53,509
+but i just realized something as well i
+was setting the movie name
+
+774
+00:14:53,509 --> 00:14:53,519
+was setting the movie name
+
+775
+00:14:53,519 --> 00:14:56,150
+was setting the movie name
+as whatever to object we're trying to
+
+776
+00:14:56,150 --> 00:14:56,160
+as whatever to object we're trying to
+
+777
+00:14:56,160 --> 00:14:56,710
+as whatever to object we're trying to
+delete
+
+778
+00:14:56,710 --> 00:14:56,720
+delete
+
+779
+00:14:56,720 --> 00:14:58,150
+delete
+but this is incorrect because the movie
+
+780
+00:14:58,150 --> 00:14:58,160
+but this is incorrect because the movie
+
+781
+00:14:58,160 --> 00:15:00,150
+but this is incorrect because the movie
+name represents the variable
+
+782
+00:15:00,150 --> 00:15:00,160
+name represents the variable
+
+783
+00:15:00,160 --> 00:15:02,629
+name represents the variable
+that is currently being written on the
+
+784
+00:15:02,629 --> 00:15:02,639
+that is currently being written on the
+
+785
+00:15:02,639 --> 00:15:03,829
+that is currently being written on the
+the input right so
+
+786
+00:15:03,829 --> 00:15:03,839
+the input right so
+
+787
+00:15:03,839 --> 00:15:06,790
+the input right so
+basically we want to delete the specific
+
+788
+00:15:06,790 --> 00:15:06,800
+basically we want to delete the specific
+
+789
+00:15:06,800 --> 00:15:08,310
+basically we want to delete the specific
+uh movie that we're trying to
+
+790
+00:15:08,310 --> 00:15:08,320
+uh movie that we're trying to
+
+791
+00:15:08,320 --> 00:15:10,389
+uh movie that we're trying to
+that we're clicking the button so for
+
+792
+00:15:10,389 --> 00:15:10,399
+that we're clicking the button so for
+
+793
+00:15:10,399 --> 00:15:12,230
+that we're clicking the button so for
+that we need to pass a variable
+
+794
+00:15:12,230 --> 00:15:12,240
+that we need to pass a variable
+
+795
+00:15:12,240 --> 00:15:14,550
+that we need to pass a variable
+inside of the delete function so on the
+
+796
+00:15:14,550 --> 00:15:14,560
+inside of the delete function so on the
+
+797
+00:15:14,560 --> 00:15:16,310
+inside of the delete function so on the
+on click event i'm going to
+
+798
+00:15:16,310 --> 00:15:16,320
+on click event i'm going to
+
+799
+00:15:16,320 --> 00:15:18,389
+on click event i'm going to
+create this this syntax so that we can
+
+800
+00:15:18,389 --> 00:15:18,399
+create this this syntax so that we can
+
+801
+00:15:18,399 --> 00:15:20,150
+create this this syntax so that we can
+pass a variable to our function
+
+802
+00:15:20,150 --> 00:15:20,160
+pass a variable to our function
+
+803
+00:15:20,160 --> 00:15:22,310
+pass a variable to our function
+and over here on the delete review i'm
+
+804
+00:15:22,310 --> 00:15:22,320
+and over here on the delete review i'm
+
+805
+00:15:22,320 --> 00:15:23,350
+and over here on the delete review i'm
+going to pass the
+
+806
+00:15:23,350 --> 00:15:23,360
+going to pass the
+
+807
+00:15:23,360 --> 00:15:26,629
+going to pass the
+value the movie name so that for every
+
+808
+00:15:26,629 --> 00:15:26,639
+value the movie name so that for every
+
+809
+00:15:26,639 --> 00:15:27,590
+value the movie name so that for every
+delete review
+
+810
+00:15:27,590 --> 00:15:27,600
+delete review
+
+811
+00:15:27,600 --> 00:15:29,509
+delete review
+we have a different movie that we're
+
+812
+00:15:29,509 --> 00:15:29,519
+we have a different movie that we're
+
+813
+00:15:29,519 --> 00:15:30,790
+we have a different movie that we're
+passing so
+
+814
+00:15:30,790 --> 00:15:30,800
+passing so
+
+815
+00:15:30,800 --> 00:15:33,910
+passing so
+if i come here and i create um
+
+816
+00:15:33,910 --> 00:15:33,920
+if i come here and i create um
+
+817
+00:15:33,920 --> 00:15:36,550
+if i come here and i create um
+a name over here like for example movie
+
+818
+00:15:36,550 --> 00:15:36,560
+a name over here like for example movie
+
+819
+00:15:36,560 --> 00:15:38,629
+a name over here like for example movie
+and instead of movie name i said here
+
+820
+00:15:38,629 --> 00:15:38,639
+and instead of movie name i said here
+
+821
+00:15:38,639 --> 00:15:41,590
+and instead of movie name i said here
+movie then now we're sending the correct
+
+822
+00:15:41,590 --> 00:15:41,600
+movie then now we're sending the correct
+
+823
+00:15:41,600 --> 00:15:42,389
+movie then now we're sending the correct
+information
+
+824
+00:15:42,389 --> 00:15:42,399
+information
+
+825
+00:15:42,399 --> 00:15:44,150
+information
+to our backend and if we come back to
+
+826
+00:15:44,150 --> 00:15:44,160
+to our backend and if we come back to
+
+827
+00:15:44,160 --> 00:15:45,509
+to our backend and if we come back to
+our to our back and i'm going to change
+
+828
+00:15:45,509 --> 00:15:45,519
+our to our back and i'm going to change
+
+829
+00:15:45,519 --> 00:15:46,470
+our to our back and i'm going to change
+some stuff
+
+830
+00:15:46,470 --> 00:15:46,480
+some stuff
+
+831
+00:15:46,480 --> 00:15:49,030
+some stuff
+on instead of slash api slash delete
+
+832
+00:15:49,030 --> 00:15:49,040
+on instead of slash api slash delete
+
+833
+00:15:49,040 --> 00:15:49,670
+on instead of slash api slash delete
+we're going to
+
+834
+00:15:49,670 --> 00:15:49,680
+we're going to
+
+835
+00:15:49,680 --> 00:15:51,829
+we're going to
+make slash api slash delete and we're
+
+836
+00:15:51,829 --> 00:15:51,839
+make slash api slash delete and we're
+
+837
+00:15:51,839 --> 00:15:53,749
+make slash api slash delete and we're
+going to add the following syntax which
+
+838
+00:15:53,749 --> 00:15:53,759
+going to add the following syntax which
+
+839
+00:15:53,759 --> 00:15:54,069
+going to add the following syntax which
+is
+
+840
+00:15:54,069 --> 00:15:54,079
+is
+
+841
+00:15:54,079 --> 00:15:56,230
+is
+how you create a way so that you can
+
+842
+00:15:56,230 --> 00:15:56,240
+how you create a way so that you can
+
+843
+00:15:56,240 --> 00:15:57,910
+how you create a way so that you can
+pass parameters to your
+
+844
+00:15:57,910 --> 00:15:57,920
+pass parameters to your
+
+845
+00:15:57,920 --> 00:16:00,150
+pass parameters to your
+your route we're going to add the colon
+
+846
+00:16:00,150 --> 00:16:00,160
+your route we're going to add the colon
+
+847
+00:16:00,160 --> 00:16:02,389
+your route we're going to add the colon
+and then the name of your of whatever
+
+848
+00:16:02,389 --> 00:16:02,399
+and then the name of your of whatever
+
+849
+00:16:02,399 --> 00:16:03,749
+and then the name of your of whatever
+variable we're passing so we're passing
+
+850
+00:16:03,749 --> 00:16:03,759
+variable we're passing so we're passing
+
+851
+00:16:03,759 --> 00:16:06,550
+variable we're passing so we're passing
+a movie name
+
+852
+00:16:06,550 --> 00:16:06,560
+
+
+853
+00:16:06,560 --> 00:16:09,189
+and over here instead of wreck the body
+
+854
+00:16:09,199 --> 00:16:10,030
+and over here instead of wreck the body
+we're grabbing
+
+855
+00:16:10,030 --> 00:16:10,040
+we're grabbing
+
+856
+00:16:10,040 --> 00:16:13,269
+we're grabbing
+rack.params and now this should be
+
+857
+00:16:13,269 --> 00:16:13,279
+rack.params and now this should be
+
+858
+00:16:13,279 --> 00:16:14,230
+rack.params and now this should be
+completely correct
+
+859
+00:16:14,230 --> 00:16:14,240
+completely correct
+
+860
+00:16:14,240 --> 00:16:16,790
+completely correct
+if i come back here and i refresh my
+
+861
+00:16:16,790 --> 00:16:16,800
+if i come back here and i refresh my
+
+862
+00:16:16,800 --> 00:16:18,470
+if i come back here and i refresh my
+browser and i try to delete
+
+863
+00:16:18,470 --> 00:16:18,480
+browser and i try to delete
+
+864
+00:16:18,480 --> 00:16:20,710
+browser and i try to delete
+this right here and i click delete you
+
+865
+00:16:20,710 --> 00:16:20,720
+this right here and i click delete you
+
+866
+00:16:20,720 --> 00:16:22,629
+this right here and i click delete you
+can see that now it's completely deleted
+
+867
+00:16:22,629 --> 00:16:22,639
+can see that now it's completely deleted
+
+868
+00:16:22,639 --> 00:16:24,629
+can see that now it's completely deleted
+from our database it's deleted from our
+
+869
+00:16:24,629 --> 00:16:24,639
+from our database it's deleted from our
+
+870
+00:16:24,639 --> 00:16:26,870
+from our database it's deleted from our
+from our front end it's all correct
+
+871
+00:16:26,870 --> 00:16:26,880
+from our front end it's all correct
+
+872
+00:16:26,880 --> 00:16:28,710
+from our front end it's all correct
+right so now we have
+
+873
+00:16:28,710 --> 00:16:28,720
+right so now we have
+
+874
+00:16:28,720 --> 00:16:31,030
+right so now we have
+the following project so it's working we
+
+875
+00:16:31,030 --> 00:16:31,040
+the following project so it's working we
+
+876
+00:16:31,040 --> 00:16:32,470
+the following project so it's working we
+have a delete functionality
+
+877
+00:16:32,470 --> 00:16:32,480
+have a delete functionality
+
+878
+00:16:32,480 --> 00:16:34,150
+have a delete functionality
+we just need to do one more thing which
+
+879
+00:16:34,150 --> 00:16:34,160
+we just need to do one more thing which
+
+880
+00:16:34,160 --> 00:16:36,470
+we just need to do one more thing which
+is create the update functionality
+
+881
+00:16:36,470 --> 00:16:36,480
+is create the update functionality
+
+882
+00:16:36,480 --> 00:16:38,389
+is create the update functionality
+so we're coming back to our backend and
+
+883
+00:16:38,389 --> 00:16:38,399
+so we're coming back to our backend and
+
+884
+00:16:38,399 --> 00:16:40,470
+so we're coming back to our backend and
+let's create another route called
+
+885
+00:16:40,470 --> 00:16:40,480
+let's create another route called
+
+886
+00:16:40,480 --> 00:16:43,829
+let's create another route called
+um another api endpoint sorry
+
+887
+00:16:43,829 --> 00:16:43,839
+um another api endpoint sorry
+
+888
+00:16:43,839 --> 00:16:47,829
+um another api endpoint sorry
+called app.put and
+
+889
+00:16:47,829 --> 00:16:47,839
+called app.put and
+
+890
+00:16:47,839 --> 00:16:51,110
+called app.put and
+instead of this is going to be the
+
+891
+00:16:51,110 --> 00:16:51,120
+instead of this is going to be the
+
+892
+00:16:51,120 --> 00:16:54,389
+instead of this is going to be the
+update slash update
+
+893
+00:16:54,389 --> 00:16:54,399
+update slash update
+
+894
+00:16:54,399 --> 00:16:56,790
+update slash update
+and we're grabbing we're doing it based
+
+895
+00:16:56,790 --> 00:16:56,800
+and we're grabbing we're doing it based
+
+896
+00:16:56,800 --> 00:16:58,150
+and we're grabbing we're doing it based
+on the movie review
+
+897
+00:16:58,150 --> 00:16:58,160
+on the movie review
+
+898
+00:16:58,160 --> 00:17:01,030
+on the movie review
+right so we're grabbing should we
+
+899
+00:17:01,030 --> 00:17:01,040
+right so we're grabbing should we
+
+900
+00:17:01,040 --> 00:17:02,710
+right so we're grabbing should we
+actually do it based on no we're doing
+
+901
+00:17:02,710 --> 00:17:02,720
+actually do it based on no we're doing
+
+902
+00:17:02,720 --> 00:17:03,269
+actually do it based on no we're doing
+based on
+
+903
+00:17:03,269 --> 00:17:03,279
+based on
+
+904
+00:17:03,279 --> 00:17:05,270
+based on
+movie name but we're trying to update
+
+905
+00:17:05,270 --> 00:17:05,280
+movie name but we're trying to update
+
+906
+00:17:05,280 --> 00:17:06,789
+movie name but we're trying to update
+the movie review so
+
+907
+00:17:06,789 --> 00:17:06,799
+the movie review so
+
+908
+00:17:06,799 --> 00:17:10,230
+the movie review so
+let's change this to an sql update
+
+909
+00:17:10,230 --> 00:17:10,240
+let's change this to an sql update
+
+910
+00:17:10,240 --> 00:17:11,669
+let's change this to an sql update
+and for those who don't know the the
+
+911
+00:17:11,669 --> 00:17:11,679
+and for those who don't know the the
+
+912
+00:17:11,679 --> 00:17:13,750
+and for those who don't know the the
+syntax or the command to update
+
+913
+00:17:13,750 --> 00:17:13,760
+syntax or the command to update
+
+914
+00:17:13,760 --> 00:17:16,309
+syntax or the command to update
+stuff under mysql database or any other
+
+915
+00:17:16,309 --> 00:17:16,319
+stuff under mysql database or any other
+
+916
+00:17:16,319 --> 00:17:18,309
+stuff under mysql database or any other
+sql type language
+
+917
+00:17:18,309 --> 00:17:18,319
+sql type language
+
+918
+00:17:18,319 --> 00:17:20,789
+sql type language
+basically you just need to write update
+
+919
+00:17:20,789 --> 00:17:20,799
+basically you just need to write update
+
+920
+00:17:20,799 --> 00:17:22,069
+basically you just need to write update
+set
+
+921
+00:17:22,069 --> 00:17:22,079
+set
+
+922
+00:17:22,079 --> 00:17:29,350
+set
+wait update set
+
+923
+00:17:29,350 --> 00:17:29,360
+
+
+924
+00:17:29,360 --> 00:17:31,430
+basically let's think the name of the
+
+925
+00:17:31,440 --> 00:17:36,870
+basically let's think the name of the
+the table right so movie reviews
+
+926
+00:17:36,870 --> 00:17:36,880
+
+
+927
+00:17:36,880 --> 00:17:39,909
+and the name of the column so we're
+
+928
+00:17:39,919 --> 00:17:40,789
+and the name of the column so we're
+trying to update
+
+929
+00:17:40,789 --> 00:17:40,799
+trying to update
+
+930
+00:17:40,799 --> 00:17:45,110
+trying to update
+movie review
+
+931
+00:17:45,110 --> 00:17:45,120
+movie review
+
+932
+00:17:45,120 --> 00:17:47,190
+movie review
+is the name of the column equal to
+
+933
+00:17:47,190 --> 00:17:47,200
+is the name of the column equal to
+
+934
+00:17:47,200 --> 00:17:48,630
+is the name of the column equal to
+question mark and the question mark is
+
+935
+00:17:48,630 --> 00:17:48,640
+question mark and the question mark is
+
+936
+00:17:48,640 --> 00:17:49,830
+question mark and the question mark is
+something we're going to is the variable
+
+937
+00:17:49,830 --> 00:17:49,840
+something we're going to is the variable
+
+938
+00:17:49,840 --> 00:17:51,430
+something we're going to is the variable
+that we're going to pass right here
+
+939
+00:17:51,430 --> 00:17:51,440
+that we're going to pass right here
+
+940
+00:17:51,440 --> 00:17:55,270
+that we're going to pass right here
+so oh i also need to write a where right
+
+941
+00:17:55,270 --> 00:17:55,280
+so oh i also need to write a where right
+
+942
+00:17:55,280 --> 00:17:56,630
+so oh i also need to write a where right
+so where
+
+943
+00:17:56,630 --> 00:17:56,640
+so where
+
+944
+00:17:56,640 --> 00:17:59,990
+so where
+um movie name equals to this so
+
+945
+00:17:59,990 --> 00:18:00,000
+um movie name equals to this so
+
+946
+00:18:00,000 --> 00:18:00,549
+um movie name equals to this so
+basically
+
+947
+00:18:00,549 --> 00:18:00,559
+basically
+
+948
+00:18:00,559 --> 00:18:02,390
+basically
+we're saying update the the table movie
+
+949
+00:18:02,390 --> 00:18:02,400
+we're saying update the the table movie
+
+950
+00:18:02,400 --> 00:18:03,830
+we're saying update the the table movie
+reviews and set the
+
+951
+00:18:03,830 --> 00:18:03,840
+reviews and set the
+
+952
+00:18:03,840 --> 00:18:07,029
+reviews and set the
+the column movie review equal to some
+
+953
+00:18:07,029 --> 00:18:07,039
+the column movie review equal to some
+
+954
+00:18:07,039 --> 00:18:07,830
+the column movie review equal to some
+variable
+
+955
+00:18:07,830 --> 00:18:07,840
+variable
+
+956
+00:18:07,840 --> 00:18:09,350
+variable
+where the movie name is equal to
+
+957
+00:18:09,350 --> 00:18:09,360
+where the movie name is equal to
+
+958
+00:18:09,360 --> 00:18:11,110
+where the movie name is equal to
+something so we're specifying
+
+959
+00:18:11,110 --> 00:18:11,120
+something so we're specifying
+
+960
+00:18:11,120 --> 00:18:13,350
+something so we're specifying
+which column we want to change based on
+
+961
+00:18:13,350 --> 00:18:13,360
+which column we want to change based on
+
+962
+00:18:13,360 --> 00:18:14,310
+which column we want to change based on
+the movie name
+
+963
+00:18:14,310 --> 00:18:14,320
+the movie name
+
+964
+00:18:14,320 --> 00:18:15,909
+the movie name
+and for that reason we need to grab two
+
+965
+00:18:15,909 --> 00:18:15,919
+and for that reason we need to grab two
+
+966
+00:18:15,919 --> 00:18:17,909
+and for that reason we need to grab two
+things we need to grab the movie name
+
+967
+00:18:17,909 --> 00:18:17,919
+things we need to grab the movie name
+
+968
+00:18:17,919 --> 00:18:19,110
+things we need to grab the movie name
+and the movie
+
+969
+00:18:19,110 --> 00:18:19,120
+and the movie
+
+970
+00:18:19,120 --> 00:18:21,669
+and the movie
+and the movie review right so movie
+
+971
+00:18:21,669 --> 00:18:21,679
+and the movie review right so movie
+
+972
+00:18:21,679 --> 00:18:23,190
+and the movie review right so movie
+review
+
+973
+00:18:23,190 --> 00:18:23,200
+review
+
+974
+00:18:23,200 --> 00:18:25,190
+review
+and we're not gonna use params we're
+
+975
+00:18:25,190 --> 00:18:25,200
+and we're not gonna use params we're
+
+976
+00:18:25,200 --> 00:18:27,270
+and we're not gonna use params we're
+gonna use buddy
+
+977
+00:18:27,270 --> 00:18:27,280
+gonna use buddy
+
+978
+00:18:27,280 --> 00:18:31,270
+gonna use buddy
+so wreck the body and correct the body
+
+979
+00:18:31,270 --> 00:18:31,280
+so wreck the body and correct the body
+
+980
+00:18:31,280 --> 00:18:34,310
+so wreck the body and correct the body
+the movie review it's going to be really
+
+981
+00:18:34,310 --> 00:18:34,320
+the movie review it's going to be really
+
+982
+00:18:34,320 --> 00:18:36,230
+the movie review it's going to be really
+similar to the insert statement
+
+983
+00:18:36,230 --> 00:18:36,240
+similar to the insert statement
+
+984
+00:18:36,240 --> 00:18:37,669
+similar to the insert statement
+and over here we're not we're not
+
+985
+00:18:37,669 --> 00:18:37,679
+and over here we're not we're not
+
+986
+00:18:37,679 --> 00:18:39,270
+and over here we're not we're not
+passing only one variable so we need to
+
+987
+00:18:39,270 --> 00:18:39,280
+passing only one variable so we need to
+
+988
+00:18:39,280 --> 00:18:40,470
+passing only one variable so we need to
+pass an array
+
+989
+00:18:40,470 --> 00:18:40,480
+pass an array
+
+990
+00:18:40,480 --> 00:18:42,390
+pass an array
+and we need to put it in order right so
+
+991
+00:18:42,390 --> 00:18:42,400
+and we need to put it in order right so
+
+992
+00:18:42,400 --> 00:18:43,909
+and we need to put it in order right so
+the first variable that we're asking is
+
+993
+00:18:43,909 --> 00:18:43,919
+the first variable that we're asking is
+
+994
+00:18:43,919 --> 00:18:44,870
+the first variable that we're asking is
+the movie review
+
+995
+00:18:44,870 --> 00:18:44,880
+the movie review
+
+996
+00:18:44,880 --> 00:18:48,310
+the movie review
+so we're going to pass the review
+
+997
+00:18:48,310 --> 00:18:48,320
+
+
+998
+00:18:48,320 --> 00:18:51,669
+and the second one is the name okay
+
+999
+00:18:51,679 --> 00:18:53,750
+and the second one is the name okay
+and we're going to change this to sql
+
+1000
+00:18:53,750 --> 00:18:53,760
+and we're going to change this to sql
+
+1001
+00:18:53,760 --> 00:18:55,669
+and we're going to change this to sql
+update and this should be
+
+1002
+00:18:55,669 --> 00:18:55,679
+update and this should be
+
+1003
+00:18:55,679 --> 00:18:58,710
+update and this should be
+working so basically i forgot to mention
+
+1004
+00:18:58,710 --> 00:18:58,720
+working so basically i forgot to mention
+
+1005
+00:18:58,720 --> 00:19:00,150
+working so basically i forgot to mention
+that
+
+1006
+00:19:00,150 --> 00:19:00,160
+that
+
+1007
+00:19:00,160 --> 00:19:03,029
+that
+this is this is the the four different
+
+1008
+00:19:03,029 --> 00:19:03,039
+this is this is the the four different
+
+1009
+00:19:03,039 --> 00:19:05,430
+this is this is the the four different
+ways you can treat an http request
+
+1010
+00:19:05,430 --> 00:19:05,440
+ways you can treat an http request
+
+1011
+00:19:05,440 --> 00:19:09,110
+ways you can treat an http request
+you can get information which is the the
+
+1012
+00:19:09,110 --> 00:19:09,120
+you can get information which is the the
+
+1013
+00:19:09,120 --> 00:19:11,669
+you can get information which is the the
+read part of the crud you can post
+
+1014
+00:19:11,669 --> 00:19:11,679
+read part of the crud you can post
+
+1015
+00:19:11,679 --> 00:19:13,590
+read part of the crud you can post
+information which is the
+
+1016
+00:19:13,590 --> 00:19:13,600
+information which is the
+
+1017
+00:19:13,600 --> 00:19:17,190
+information which is the
+the insert part or the create part
+
+1018
+00:19:17,190 --> 00:19:17,200
+the insert part or the create part
+
+1019
+00:19:17,200 --> 00:19:18,549
+the insert part or the create part
+then whenever you want to delete there's
+
+1020
+00:19:18,549 --> 00:19:18,559
+then whenever you want to delete there's
+
+1021
+00:19:18,559 --> 00:19:19,990
+then whenever you want to delete there's
+the delete and whenever you want to
+
+1022
+00:19:19,990 --> 00:19:20,000
+the delete and whenever you want to
+
+1023
+00:19:20,000 --> 00:19:21,350
+the delete and whenever you want to
+update there's the put
+
+1024
+00:19:21,350 --> 00:19:21,360
+update there's the put
+
+1025
+00:19:21,360 --> 00:19:23,669
+update there's the put
+so this is how you you always work with
+
+1026
+00:19:23,669 --> 00:19:23,679
+so this is how you you always work with
+
+1027
+00:19:23,679 --> 00:19:24,470
+so this is how you you always work with
+the different
+
+1028
+00:19:24,470 --> 00:19:24,480
+the different
+
+1029
+00:19:24,480 --> 00:19:28,070
+the different
+http requests so let's go to our front
+
+1030
+00:19:28,070 --> 00:19:28,080
+http requests so let's go to our front
+
+1031
+00:19:28,080 --> 00:19:28,470
+http requests so let's go to our front
+end
+
+1032
+00:19:28,470 --> 00:19:28,480
+end
+
+1033
+00:19:28,480 --> 00:19:32,070
+end
+and let's create a function called
+
+1034
+00:19:32,070 --> 00:19:32,080
+and let's create a function called
+
+1035
+00:19:32,080 --> 00:19:35,430
+and let's create a function called
+um update review
+
+1036
+00:19:35,430 --> 00:19:35,440
+um update review
+
+1037
+00:19:35,440 --> 00:19:39,110
+um update review
+update review
+
+1038
+00:19:39,110 --> 00:19:39,120
+update review
+
+1039
+00:19:39,120 --> 00:19:42,470
+update review
+and let's grab here and
+
+1040
+00:19:42,470 --> 00:19:42,480
+and let's grab here and
+
+1041
+00:19:42,480 --> 00:19:45,029
+and let's grab here and
+let's try to make let's try to pass a
+
+1042
+00:19:45,029 --> 00:19:45,039
+let's try to make let's try to pass a
+
+1043
+00:19:45,039 --> 00:19:46,710
+let's try to make let's try to pass a
+variable we're passing the movie name
+
+1044
+00:19:46,710 --> 00:19:46,720
+variable we're passing the movie name
+
+1045
+00:19:46,720 --> 00:19:49,350
+variable we're passing the movie name
+so yeah let's let's still use movie and
+
+1046
+00:19:49,350 --> 00:19:49,360
+so yeah let's let's still use movie and
+
+1047
+00:19:49,360 --> 00:19:50,390
+so yeah let's let's still use movie and
+instead of this
+
+1048
+00:19:50,390 --> 00:19:50,400
+instead of this
+
+1049
+00:19:50,400 --> 00:19:53,750
+instead of this
+let's change it to xs.put and let's
+
+1050
+00:19:53,750 --> 00:19:53,760
+let's change it to xs.put and let's
+
+1051
+00:19:53,760 --> 00:19:57,750
+let's change it to xs.put and let's
+remove this let's make it a simple
+
+1052
+00:19:57,750 --> 00:19:57,760
+remove this let's make it a simple
+
+1053
+00:19:57,760 --> 00:20:02,870
+remove this let's make it a simple
+url without any params and
+
+1054
+00:20:02,870 --> 00:20:02,880
+url without any params and
+
+1055
+00:20:02,880 --> 00:20:07,270
+url without any params and
+this is going to be api update right
+
+1056
+00:20:07,270 --> 00:20:07,280
+this is going to be api update right
+
+1057
+00:20:07,280 --> 00:20:09,669
+this is going to be api update right
+and let's pass another variable just
+
+1058
+00:20:09,669 --> 00:20:09,679
+and let's pass another variable just
+
+1059
+00:20:09,679 --> 00:20:11,990
+and let's pass another variable just
+like we did on the app.post
+
+1060
+00:20:11,990 --> 00:20:12,000
+like we did on the app.post
+
+1061
+00:20:12,000 --> 00:20:14,710
+like we did on the app.post
+because we can do this for the update
+
+1062
+00:20:14,710 --> 00:20:14,720
+because we can do this for the update
+
+1063
+00:20:14,720 --> 00:20:16,070
+because we can do this for the update
+and
+
+1064
+00:20:16,070 --> 00:20:16,080
+and
+
+1065
+00:20:16,080 --> 00:20:17,510
+and
+let's create a state right we need to
+
+1066
+00:20:17,510 --> 00:20:17,520
+let's create a state right we need to
+
+1067
+00:20:17,520 --> 00:20:19,270
+let's create a state right we need to
+create a state for the variable that
+
+1068
+00:20:19,270 --> 00:20:19,280
+create a state for the variable that
+
+1069
+00:20:19,280 --> 00:20:19,990
+create a state for the variable that
+we're currently
+
+1070
+00:20:19,990 --> 00:20:20,000
+we're currently
+
+1071
+00:20:20,000 --> 00:20:21,510
+we're currently
+like the input that we're currently
+
+1072
+00:20:21,510 --> 00:20:21,520
+like the input that we're currently
+
+1073
+00:20:21,520 --> 00:20:23,669
+like the input that we're currently
+currently trying to change so
+
+1074
+00:20:23,669 --> 00:20:23,679
+currently trying to change so
+
+1075
+00:20:23,679 --> 00:20:27,750
+currently trying to change so
+like let's come here and write const
+
+1076
+00:20:27,750 --> 00:20:27,760
+
+
+1077
+00:20:27,760 --> 00:20:31,270
+um new
+
+1078
+00:20:31,280 --> 00:20:34,470
+um new
+review and set
+
+1079
+00:20:34,470 --> 00:20:34,480
+review and set
+
+1080
+00:20:34,480 --> 00:20:37,830
+review and set
+new review and let's
+
+1081
+00:20:37,830 --> 00:20:37,840
+new review and let's
+
+1082
+00:20:37,840 --> 00:20:41,510
+new review and let's
+create a use state and set it equal to
+
+1083
+00:20:41,510 --> 00:20:41,520
+create a use state and set it equal to
+
+1084
+00:20:41,520 --> 00:20:42,470
+create a use state and set it equal to
+an empty
+
+1085
+00:20:42,470 --> 00:20:42,480
+an empty
+
+1086
+00:20:42,480 --> 00:20:46,310
+an empty
+string right so um whenever we
+
+1087
+00:20:46,310 --> 00:20:46,320
+string right so um whenever we
+
+1088
+00:20:46,320 --> 00:20:48,390
+string right so um whenever we
+work whenever on the whenever we change
+
+1089
+00:20:48,390 --> 00:20:48,400
+work whenever on the whenever we change
+
+1090
+00:20:48,400 --> 00:20:49,590
+work whenever on the whenever we change
+the input
+
+1091
+00:20:49,590 --> 00:20:49,600
+the input
+
+1092
+00:20:49,600 --> 00:20:51,430
+the input
+we want to set the
+
+1093
+00:20:51,430 --> 00:20:51,440
+we want to set the
+
+1094
+00:20:51,440 --> 00:20:53,190
+we want to set the
+[Applause]
+
+1095
+00:20:53,190 --> 00:20:53,200
+[Applause]
+
+1096
+00:20:53,200 --> 00:20:57,669
+[Applause]
+let me right here so when i set the
+
+1097
+00:20:57,669 --> 00:20:57,679
+let me right here so when i set the
+
+1098
+00:20:57,679 --> 00:21:01,190
+let me right here so when i set the
+set the new review equal to
+
+1099
+00:21:01,190 --> 00:21:01,200
+set the new review equal to
+
+1100
+00:21:01,200 --> 00:21:04,310
+set the new review equal to
+the event which we didn't create yet so
+
+1101
+00:21:04,310 --> 00:21:04,320
+the event which we didn't create yet so
+
+1102
+00:21:04,320 --> 00:21:07,510
+the event which we didn't create yet so
+e dot target
+
+1103
+00:21:07,510 --> 00:21:07,520
+e dot target
+
+1104
+00:21:07,520 --> 00:21:09,669
+e dot target
+dot value right this is really simple
+
+1105
+00:21:09,669 --> 00:21:09,679
+dot value right this is really simple
+
+1106
+00:21:09,679 --> 00:21:11,190
+dot value right this is really simple
+this is what we did on the other
+
+1107
+00:21:11,190 --> 00:21:11,200
+this is what we did on the other
+
+1108
+00:21:11,200 --> 00:21:14,310
+this is what we did on the other
+inputs in our application and now we're
+
+1109
+00:21:14,310 --> 00:21:14,320
+inputs in our application and now we're
+
+1110
+00:21:14,320 --> 00:21:16,149
+inputs in our application and now we're
+setting the new review equal to this
+
+1111
+00:21:16,149 --> 00:21:16,159
+setting the new review equal to this
+
+1112
+00:21:16,159 --> 00:21:19,350
+setting the new review equal to this
+we also want to um whenever we finish
+
+1113
+00:21:19,350 --> 00:21:19,360
+we also want to um whenever we finish
+
+1114
+00:21:19,360 --> 00:21:20,789
+we also want to um whenever we finish
+this we want to clear
+
+1115
+00:21:20,789 --> 00:21:20,799
+this we want to clear
+
+1116
+00:21:20,799 --> 00:21:24,710
+this we want to clear
+so set our new review variable equal to
+
+1117
+00:21:24,710 --> 00:21:24,720
+so set our new review variable equal to
+
+1118
+00:21:24,720 --> 00:21:27,350
+so set our new review variable equal to
+an empty string so that we can use it
+
+1119
+00:21:27,350 --> 00:21:27,360
+an empty string so that we can use it
+
+1120
+00:21:27,360 --> 00:21:28,630
+an empty string so that we can use it
+again if we're trying to update
+
+1121
+00:21:28,630 --> 00:21:28,640
+again if we're trying to update
+
+1122
+00:21:28,640 --> 00:21:30,630
+again if we're trying to update
+different movie reviews right so
+
+1123
+00:21:30,630 --> 00:21:30,640
+different movie reviews right so
+
+1124
+00:21:30,640 --> 00:21:33,669
+different movie reviews right so
+set new review
+
+1125
+00:21:33,669 --> 00:21:33,679
+set new review
+
+1126
+00:21:33,679 --> 00:21:34,870
+set new review
+equal to an empty stream because
+
+1127
+00:21:34,870 --> 00:21:34,880
+equal to an empty stream because
+
+1128
+00:21:34,880 --> 00:21:36,149
+equal to an empty stream because
+whenever we finish sending this
+
+1129
+00:21:36,149 --> 00:21:36,159
+whenever we finish sending this
+
+1130
+00:21:36,159 --> 00:21:36,950
+whenever we finish sending this
+information
+
+1131
+00:21:36,950 --> 00:21:36,960
+information
+
+1132
+00:21:36,960 --> 00:21:38,789
+information
+we're using the same variable for every
+
+1133
+00:21:38,789 --> 00:21:38,799
+we're using the same variable for every
+
+1134
+00:21:38,799 --> 00:21:40,470
+we're using the same variable for every
+single movie review
+
+1135
+00:21:40,470 --> 00:21:40,480
+single movie review
+
+1136
+00:21:40,480 --> 00:21:42,630
+single movie review
+so we want to set it equal to we want to
+
+1137
+00:21:42,630 --> 00:21:42,640
+so we want to set it equal to we want to
+
+1138
+00:21:42,640 --> 00:21:44,070
+so we want to set it equal to we want to
+clear it you know
+
+1139
+00:21:44,070 --> 00:21:44,080
+clear it you know
+
+1140
+00:21:44,080 --> 00:21:48,230
+clear it you know
+so this should be right and the movie
+
+1141
+00:21:48,230 --> 00:21:48,240
+so this should be right and the movie
+
+1142
+00:21:48,240 --> 00:21:51,350
+so this should be right and the movie
+we're passing the movie and the review
+
+1143
+00:21:51,350 --> 00:21:51,360
+we're passing the movie and the review
+
+1144
+00:21:51,360 --> 00:21:52,950
+we're passing the movie and the review
+we're passing the new
+
+1145
+00:21:52,950 --> 00:21:52,960
+we're passing the new
+
+1146
+00:21:52,960 --> 00:21:56,870
+we're passing the new
+review so let's also
+
+1147
+00:21:56,870 --> 00:21:56,880
+review so let's also
+
+1148
+00:21:56,880 --> 00:21:58,950
+review so let's also
+create an unclick event for this just
+
+1149
+00:21:58,950 --> 00:21:58,960
+create an unclick event for this just
+
+1150
+00:21:58,960 --> 00:22:00,630
+create an unclick event for this just
+like we did for the delete button
+
+1151
+00:22:00,630 --> 00:22:00,640
+like we did for the delete button
+
+1152
+00:22:00,640 --> 00:22:01,909
+like we did for the delete button
+because we're going to pass a variable
+
+1153
+00:22:01,909 --> 00:22:01,919
+because we're going to pass a variable
+
+1154
+00:22:01,919 --> 00:22:04,390
+because we're going to pass a variable
+here and
+
+1155
+00:22:04,390 --> 00:22:04,400
+here and
+
+1156
+00:22:04,400 --> 00:22:06,390
+here and
+let me write update review and we're
+
+1157
+00:22:06,390 --> 00:22:06,400
+let me write update review and we're
+
+1158
+00:22:06,400 --> 00:22:07,590
+let me write update review and we're
+going to pass the
+
+1159
+00:22:07,590 --> 00:22:07,600
+going to pass the
+
+1160
+00:22:07,600 --> 00:22:11,430
+going to pass the
+move the value the movie name
+
+1161
+00:22:11,430 --> 00:22:11,440
+move the value the movie name
+
+1162
+00:22:11,440 --> 00:22:14,549
+move the value the movie name
+right just like the the delete button so
+
+1163
+00:22:14,549 --> 00:22:14,559
+right just like the the delete button so
+
+1164
+00:22:14,559 --> 00:22:16,149
+right just like the the delete button so
+i have a feeling that this should be
+
+1165
+00:22:16,149 --> 00:22:16,159
+i have a feeling that this should be
+
+1166
+00:22:16,159 --> 00:22:18,230
+i have a feeling that this should be
+working but as i mentioned
+
+1167
+00:22:18,230 --> 00:22:18,240
+working but as i mentioned
+
+1168
+00:22:18,240 --> 00:22:19,830
+working but as i mentioned
+something there there's always something
+
+1169
+00:22:19,830 --> 00:22:19,840
+something there there's always something
+
+1170
+00:22:19,840 --> 00:22:21,430
+something there there's always something
+wrong so
+
+1171
+00:22:21,430 --> 00:22:21,440
+wrong so
+
+1172
+00:22:21,440 --> 00:22:23,510
+wrong so
+let's try this i'm going to refresh
+
+1173
+00:22:23,510 --> 00:22:23,520
+let's try this i'm going to refresh
+
+1174
+00:22:23,520 --> 00:22:25,350
+let's try this i'm going to refresh
+everything and i want to change the
+
+1175
+00:22:25,350 --> 00:22:25,360
+everything and i want to change the
+
+1176
+00:22:25,360 --> 00:22:26,630
+everything and i want to change the
+inception
+
+1177
+00:22:26,630 --> 00:22:26,640
+inception
+
+1178
+00:22:26,640 --> 00:22:31,270
+inception
+review from good movie to awesome movie
+
+1179
+00:22:31,270 --> 00:22:31,280
+review from good movie to awesome movie
+
+1180
+00:22:31,280 --> 00:22:33,510
+review from good movie to awesome movie
+and let me click update let's refresh
+
+1181
+00:22:33,510 --> 00:22:33,520
+and let me click update let's refresh
+
+1182
+00:22:33,520 --> 00:22:34,310
+and let me click update let's refresh
+the screen
+
+1183
+00:22:34,310 --> 00:22:34,320
+the screen
+
+1184
+00:22:34,320 --> 00:22:35,990
+the screen
+and it didn't work let's look at what
+
+1185
+00:22:35,990 --> 00:22:36,000
+and it didn't work let's look at what
+
+1186
+00:22:36,000 --> 00:22:37,750
+and it didn't work let's look at what
+happened so
+
+1187
+00:22:37,750 --> 00:22:37,760
+happened so
+
+1188
+00:22:37,760 --> 00:22:40,789
+happened so
+and we're back it didn't take long uh
+
+1189
+00:22:40,789 --> 00:22:40,799
+and we're back it didn't take long uh
+
+1190
+00:22:40,799 --> 00:22:43,110
+and we're back it didn't take long uh
+i i kind of already knew when i looked
+
+1191
+00:22:43,110 --> 00:22:43,120
+i i kind of already knew when i looked
+
+1192
+00:22:43,120 --> 00:22:43,990
+i i kind of already knew when i looked
+at my code again
+
+1193
+00:22:43,990 --> 00:22:44,000
+at my code again
+
+1194
+00:22:44,000 --> 00:22:45,750
+at my code again
+i already figured it out and as you can
+
+1195
+00:22:45,750 --> 00:22:45,760
+i already figured it out and as you can
+
+1196
+00:22:45,760 --> 00:22:47,190
+i already figured it out and as you can
+see we changed everything
+
+1197
+00:22:47,190 --> 00:22:47,200
+see we changed everything
+
+1198
+00:22:47,200 --> 00:22:49,270
+see we changed everything
+basically i wrote the sql statement
+
+1199
+00:22:49,270 --> 00:22:49,280
+basically i wrote the sql statement
+
+1200
+00:22:49,280 --> 00:22:51,190
+basically i wrote the sql statement
+wrong it's not update set
+
+1201
+00:22:51,190 --> 00:22:51,200
+wrong it's not update set
+
+1202
+00:22:51,200 --> 00:22:53,830
+wrong it's not update set
+the name of the table and the columns
+
+1203
+00:22:53,830 --> 00:22:53,840
+the name of the table and the columns
+
+1204
+00:22:53,840 --> 00:22:55,669
+the name of the table and the columns
+it's update the name of the table
+
+1205
+00:22:55,669 --> 00:22:55,679
+it's update the name of the table
+
+1206
+00:22:55,679 --> 00:22:58,549
+it's update the name of the table
+set the columns where movie name is
+
+1207
+00:22:58,549 --> 00:22:58,559
+set the columns where movie name is
+
+1208
+00:22:58,559 --> 00:22:59,590
+set the columns where movie name is
+equal to this
+
+1209
+00:22:59,590 --> 00:22:59,600
+equal to this
+
+1210
+00:22:59,600 --> 00:23:01,110
+equal to this
+it's really simple i don't know why i
+
+1211
+00:23:01,110 --> 00:23:01,120
+it's really simple i don't know why i
+
+1212
+00:23:01,120 --> 00:23:02,870
+it's really simple i don't know why i
+did that but that's okay
+
+1213
+00:23:02,870 --> 00:23:02,880
+did that but that's okay
+
+1214
+00:23:02,880 --> 00:23:05,830
+did that but that's okay
+so you can see that if i come here and
+
+1215
+00:23:05,830 --> 00:23:05,840
+so you can see that if i come here and
+
+1216
+00:23:05,840 --> 00:23:07,350
+so you can see that if i come here and
+first of all i'm going to delete
+
+1217
+00:23:07,350 --> 00:23:07,360
+first of all i'm going to delete
+
+1218
+00:23:07,360 --> 00:23:09,990
+first of all i'm going to delete
+all the smurfs so okay and if i want to
+
+1219
+00:23:09,990 --> 00:23:10,000
+all the smurfs so okay and if i want to
+
+1220
+00:23:10,000 --> 00:23:10,470
+all the smurfs so okay and if i want to
+change
+
+1221
+00:23:10,470 --> 00:23:10,480
+change
+
+1222
+00:23:10,480 --> 00:23:14,870
+change
+a harry potter to the best
+
+1223
+00:23:14,870 --> 00:23:14,880
+a harry potter to the best
+
+1224
+00:23:14,880 --> 00:23:17,990
+a harry potter to the best
+movie franchise
+
+1225
+00:23:17,990 --> 00:23:18,000
+movie franchise
+
+1226
+00:23:18,000 --> 00:23:21,190
+movie franchise
+in his story of
+
+1227
+00:23:21,190 --> 00:23:21,200
+in his story of
+
+1228
+00:23:21,200 --> 00:23:24,789
+in his story of
+cinema and i click update and i refresh
+
+1229
+00:23:24,789 --> 00:23:24,799
+cinema and i click update and i refresh
+
+1230
+00:23:24,799 --> 00:23:26,310
+cinema and i click update and i refresh
+the page you can see that
+
+1231
+00:23:26,310 --> 00:23:26,320
+the page you can see that
+
+1232
+00:23:26,320 --> 00:23:28,230
+the page you can see that
+it correctly updated everything and it
+
+1233
+00:23:28,230 --> 00:23:28,240
+it correctly updated everything and it
+
+1234
+00:23:28,240 --> 00:23:29,750
+it correctly updated everything and it
+will keep it that way because we're
+
+1235
+00:23:29,750 --> 00:23:29,760
+will keep it that way because we're
+
+1236
+00:23:29,760 --> 00:23:31,750
+will keep it that way because we're
+updating it in our database
+
+1237
+00:23:31,750 --> 00:23:31,760
+updating it in our database
+
+1238
+00:23:31,760 --> 00:23:33,270
+updating it in our database
+and i don't know if this video is too
+
+1239
+00:23:33,270 --> 00:23:33,280
+and i don't know if this video is too
+
+1240
+00:23:33,280 --> 00:23:35,750
+and i don't know if this video is too
+long but we created our whole credit
+
+1241
+00:23:35,750 --> 00:23:35,760
+long but we created our whole credit
+
+1242
+00:23:35,760 --> 00:23:36,470
+long but we created our whole credit
+application
+
+1243
+00:23:36,470 --> 00:23:36,480
+application
+
+1244
+00:23:36,480 --> 00:23:38,070
+application
+so yeah i hope you guys enjoyed this
+
+1245
+00:23:38,070 --> 00:23:38,080
+so yeah i hope you guys enjoyed this
+
+1246
+00:23:38,080 --> 00:23:40,310
+so yeah i hope you guys enjoyed this
+video i hope you guys like this series
+
+1247
+00:23:40,310 --> 00:23:40,320
+video i hope you guys like this series
+
+1248
+00:23:40,320 --> 00:23:42,470
+video i hope you guys like this series
+um i'm still thinking of making some
+
+1249
+00:23:42,470 --> 00:23:42,480
+um i'm still thinking of making some
+
+1250
+00:23:42,480 --> 00:23:44,230
+um i'm still thinking of making some
+series where i actually make it look
+
+1251
+00:23:44,230 --> 00:23:44,240
+series where i actually make it look
+
+1252
+00:23:44,240 --> 00:23:44,630
+series where i actually make it look
+good
+
+1253
+00:23:44,630 --> 00:23:44,640
+good
+
+1254
+00:23:44,640 --> 00:23:46,549
+good
+because i know this this looks like
+
+1255
+00:23:46,549 --> 00:23:46,559
+because i know this this looks like
+
+1256
+00:23:46,559 --> 00:23:47,669
+because i know this this looks like
+but i'm trying to
+
+1257
+00:23:47,669 --> 00:23:47,679
+but i'm trying to
+
+1258
+00:23:47,679 --> 00:23:49,830
+but i'm trying to
+just focus on functionality but i'm also
+
+1259
+00:23:49,830 --> 00:23:49,840
+just focus on functionality but i'm also
+
+1260
+00:23:49,840 --> 00:23:51,190
+just focus on functionality but i'm also
+really interested in working on the
+
+1261
+00:23:51,190 --> 00:23:51,200
+really interested in working on the
+
+1262
+00:23:51,200 --> 00:23:51,830
+really interested in working on the
+front end
+
+1263
+00:23:51,830 --> 00:23:51,840
+front end
+
+1264
+00:23:51,840 --> 00:23:53,990
+front end
+with doing some css so i'm definitely
+
+1265
+00:23:53,990 --> 00:23:54,000
+with doing some css so i'm definitely
+
+1266
+00:23:54,000 --> 00:23:55,430
+with doing some css so i'm definitely
+thinking of doing some series where i
+
+1267
+00:23:55,430 --> 00:23:55,440
+thinking of doing some series where i
+
+1268
+00:23:55,440 --> 00:23:56,789
+thinking of doing some series where i
+teach you guys how to work
+
+1269
+00:23:56,789 --> 00:23:56,799
+teach you guys how to work
+
+1270
+00:23:56,799 --> 00:23:59,110
+teach you guys how to work
+with that in a better and more more like
+
+1271
+00:23:59,110 --> 00:23:59,120
+with that in a better and more more like
+
+1272
+00:23:59,120 --> 00:23:59,990
+with that in a better and more more like
+visually
+
+1273
+00:23:59,990 --> 00:24:00,000
+visually
+
+1274
+00:24:00,000 --> 00:24:01,750
+visually
+appealing way you know if you know what
+
+1275
+00:24:01,750 --> 00:24:01,760
+appealing way you know if you know what
+
+1276
+00:24:01,760 --> 00:24:03,669
+appealing way you know if you know what
+i mean so i hope you guys enjoyed this
+
+1277
+00:24:03,669 --> 00:24:03,679
+i mean so i hope you guys enjoyed this
+
+1278
+00:24:03,679 --> 00:24:03,990
+i mean so i hope you guys enjoyed this
+series
+
+1279
+00:24:03,990 --> 00:24:04,000
+series
+
+1280
+00:24:04,000 --> 00:24:05,350
+series
+it was really nice doing this for you
+
+1281
+00:24:05,350 --> 00:24:05,360
+it was really nice doing this for you
+
+1282
+00:24:05,360 --> 00:24:07,350
+it was really nice doing this for you
+guys and if you have any any
+
+1283
+00:24:07,350 --> 00:24:07,360
+guys and if you have any any
+
+1284
+00:24:07,360 --> 00:24:08,789
+guys and if you have any any
+questions any doubts please leave a
+
+1285
+00:24:08,789 --> 00:24:08,799
+questions any doubts please leave a
+
+1286
+00:24:08,799 --> 00:24:10,070
+questions any doubts please leave a
+comment down below if you enjoyed this
+
+1287
+00:24:10,070 --> 00:24:10,080
+comment down below if you enjoyed this
+
+1288
+00:24:10,080 --> 00:24:10,710
+comment down below if you enjoyed this
+series
+
+1289
+00:24:10,710 --> 00:24:10,720
+series
+
+1290
+00:24:10,720 --> 00:24:12,870
+series
+please like this video and i see you
+
+1291
+00:24:12,870 --> 00:24:12,880
+please like this video and i see you
+
+1292
+00:24:12,880 --> 00:24:18,270
+please like this video and i see you
+guys next time
+
+1293
+00:24:18,270 --> 00:24:18,280
+guys next time
+
+1294
+00:24:18,280 --> 00:24:22,529
+guys next time
+[Music]

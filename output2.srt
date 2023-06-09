@@ -1,0 +1,267 @@
+1
+00:00:00,080 --> 00:00:03,189
+hey guys how's it going i'm back here
+
+2
+00:00:03,189 --> 00:00:04,390
+with another video of my series where i
+
+3
+00:00:04,390 --> 00:00:06,230
+teach you guys how to make a credit
+
+4
+00:00:06,230 --> 00:00:08,390
+application from the beginning
+
+5
+00:00:08,390 --> 00:00:10,310
+and i know the last video was pretty
+
+6
+00:00:10,310 --> 00:00:12,310
+long it was like 30 minutes long
+
+7
+00:00:12,310 --> 00:00:13,430
+but i think this is the last video of my
+
+8
+00:00:13,430 --> 00:00:15,749
+series so
+
+9
+00:00:15,749 --> 00:00:16,790
+currently we can read like everything
+
+10
+00:00:16,790 --> 00:00:19,830
+from the database
+
+11
+00:00:19,830 --> 00:00:20,790
+and we can also insert everything in our
+
+12
+00:00:20,790 --> 00:00:24,310
+database
+
+13
+00:00:24,310 --> 00:00:26,950
+and what we need to do left is maybe
+
+14
+00:00:26,950 --> 00:00:29,429
+i'm thinking like trying to to make a
+
+15
+00:00:29,429 --> 00:00:30,950
+way so that whenever you add a movie
+
+16
+00:00:30,950 --> 00:00:32,630
+to our database you don't need to
+
+17
+00:00:32,630 --> 00:00:33,270
+refresh the page because currently for
+
+18
+00:00:33,270 --> 00:00:37,030
+example
+
+19
+00:00:37,030 --> 00:00:40,229
+if i write here fast
+
+20
+00:00:40,229 --> 00:00:44,069
+and furious right and
+
+21
+00:00:44,069 --> 00:00:45,190
+i come here and write very good and i
+
+22
+00:00:45,190 --> 00:00:47,110
+submit
+
+23
+00:00:47,110 --> 00:00:48,630
+nothing appears you need to refresh the
+
+24
+00:00:48,630 --> 00:00:50,069
+page so that it will
+
+25
+00:00:50,069 --> 00:00:51,830
+fetch the new information from the
+
+26
+00:00:51,830 --> 00:00:54,310
+database why is this happening
+
+27
+00:00:54,310 --> 00:00:55,270
+basically we are only wait let me come
+
+28
+00:00:55,270 --> 00:00:56,630
+to app.js
+
+29
+00:00:56,630 --> 00:00:58,950
+we're only getting the information
+
+30
+00:00:58,950 --> 00:01:00,869
+whenever the use effect hook is called
+
+31
+00:01:00,869 --> 00:01:03,349
+and this only happens once whenever the
+
+32
+00:01:03,349 --> 00:01:05,108
+page is rendered so we need to fix that
+
+33
+00:01:05,108 --> 00:01:06,390
+so that whenever we just click here we
+
+34
+00:01:06,390 --> 00:01:07,910
+don't need to refresh the page
+
+35
+00:01:07,910 --> 00:01:09,830
+and this is basically one of the best
+
+36
+00:01:09,830 --> 00:01:11,350
+things that react can do and we're going
+
+37
+00:01:11,350 --> 00:01:13,350
+to take advantage of that
+
+38
+00:01:13,350 --> 00:01:15,510
+and also i'm thinking we need to style
+
+39
+00:01:15,510 --> 00:01:16,149
+this a bit so that we can have like a
+
+40
+00:01:16,149 --> 00:01:19,030
+nice
+
+41
+00:01:19,030 --> 00:01:20,310
+card for each movie and in each card
+
+42
+00:01:20,310 --> 00:01:23,510
+there's going to be
+
+43
+00:01:23,510 --> 00:01:26,310
+maybe an update button and
+
+44
+00:01:26,310 --> 00:01:27,109
+a delete button so we can finish the
+
+45
+00:01:27,109 --> 00:01:29,670
+crud
+
+46
+00:01:29,670 --> 00:01:30,149
+aspect of our application which like up
+
+47
+00:01:30,149 --> 00:01:32,710
+it means
+
+48
+00:01:32,710 --> 00:01:33,590
+basically update and delete and i think
+
+49
+00:01:33,590 --> 00:01:35,749
+that's it
+
+50
+00:01:35,749 --> 00:01:36,870
+so the first thing we're going to do is
+
+51
+00:01:36,870 --> 00:01:39,190
+we're going to make the
+
+52
+00:01:39,190 --> 00:01:39,990
+application be able to update itself
+
+53
+00:01:39,990 --> 00:01:45,670
+cons
+
+54
+00:01:45,670 --> 00:01:46,469
+and you know that we have a movie review
+
+55
+00:01:46,469 --> 00:01:48,789
+list
+
+56
+00:01:48,789 --> 00:01:51,350
+this is basically the the list that is
+
+57
+00:01:51,350 --> 00:01:53,830
+displaying right here with all the names
+
+58
+00:01:53,830 --> 00:01:55,270
+so whenever we click on submit review i
+
+59
+00:01:55,270 --> 00:01:57,429
+simply want to add
+
+60
+00:01:57,429 --> 00:01:59,350
+the the new movie that i'm that i'm
+
+61
+00:01:59,350 --> 00:02:02,389
+submitting into that list
+
+62
+00:02:02,389 --> 00:02:06,870
+so i'll just grab set movie list
+
+63
+00:02:06,870 --> 00:02:09,990
+and i'll come here and i'll erase this
+
+64
+00:02:09,990 --> 00:02:13,510
+and i'll set the movie list equal to
+
+65
+00:02:13,510 --> 00:02:15,350
+the current movie list so movie list
+
+66
+00:02:15,350 --> 00:02:20,830
+and i'm also going to add some dots
+
+67
+00:02:20,830 --> 00:24:22,529
+
