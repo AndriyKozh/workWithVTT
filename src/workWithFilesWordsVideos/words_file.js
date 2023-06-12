@@ -3,7 +3,7 @@ const createCsvWriter = require("csv-writer").createObjectCsvWriter;
 
 async function wordsFile(fileName) {
   try {
-    const filePath = `/Users/andrijkozevnikov/Documents/test_arch/files_result/${fileName}/${fileName}.txt`;
+    const filePath = `/Users/andrijkozevnikov/Documents/ProjectYoutube/videos_files_words/files/${fileName}/${fileName}.txt`;
 
     const data = await fs.readFile(filePath, "utf8");
 
@@ -12,7 +12,7 @@ async function wordsFile(fileName) {
 
     // Записуємо дані в CSV формат
     const csvWriter = createCsvWriter({
-      path: `/Users/andrijkozevnikov/Documents/test_arch/files_result/${fileName}/words.csv`,
+      path: `/Users/andrijkozevnikov/Documents/ProjectYoutube/videos_files_words/files/${fileName}/words.csv`,
       header: ["word"],
     });
 

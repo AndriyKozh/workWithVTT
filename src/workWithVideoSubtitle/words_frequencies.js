@@ -3,8 +3,8 @@ const createCsvWriter = require("csv-writer").createObjectCsvWriter;
 
 async function createSortedUniqueWordsFilesFromCSV(fileName) {
   try {
-    const inputFilePath = `/Users/andrijkozevnikov/Documents/test_arch/files_result/${fileName}/words.csv`;
-    const outputFilePath = `/Users/andrijkozevnikov/Documents/test_arch/files_result/${fileName}/words_frequencies_sorted.csv`;
+    const inputFilePath = `/Users/andrijkozevnikov/Documents/ProjectYoutube/videos_files_words/files/${fileName}/words.csv`;
+    const outputFilePath = `/Users/andrijkozevnikov/Documents/ProjectYoutube/videos_files_words/files/${fileName}/words_frequencies_sorted.csv`;
 
     const wordCounts = {};
 
@@ -41,6 +41,8 @@ async function createSortedUniqueWordsFilesFromCSV(fileName) {
     const csvContent = await fs.readFile(outputFilePath, "utf8");
     const csvLines = csvContent.split("\n").slice(1).join("\n");
     await fs.writeFile(outputFilePath, csvLines);
+
+    console.log(`Sorted CSV file has been created: ${outputFilePath}`);
   } catch (error) {
     console.error(`Error processing file: ${error}`);
   }

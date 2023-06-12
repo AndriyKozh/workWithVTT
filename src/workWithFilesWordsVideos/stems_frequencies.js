@@ -4,8 +4,8 @@ const createCsvWriter = require("csv-writer").createObjectCsvWriter;
 
 async function createSortedUniqueStemsFileFromCSV(fileName) {
   try {
-    const inputFilePath = `/Users/andrijkozevnikov/Documents/test_arch/files_result/${fileName}/stems.csv`;
-    const outputFilePath = `/Users/andrijkozevnikov/Documents/test_arch/files_result/${fileName}/stems_frequencies_sorted.csv`;
+    const inputFilePath = `/Users/andrijkozevnikov/Documents/ProjectYoutube/videos_files_words/files/${fileName}/stems.csv`;
+    const outputFilePath = `/Users/andrijkozevnikov/Documents/ProjectYoutube/videos_files_words/files/${fileName}/stems_frequencies_sorted.csv`;
 
     const stemCounts = {};
 

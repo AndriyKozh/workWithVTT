@@ -97,7 +97,7 @@
 // }
 
 // processFiles().catch(console.error);
-
+/////////////////////////////////////////////////////////////////
 const fs = require("fs").promises;
 const path = require("path");
 const AdmZip = require("adm-zip");
@@ -109,8 +109,10 @@ const stems_frequencies = require("./stems_frequencies");
 
 // Папки для зберігання файлів
 const vtt_origin_dir = "/Users/andrijkozevnikov/Documents/test_arch/vtt_origin";
-const vtt_zip_dir = "/Users/andrijkozevnikov/Documents/test_arch/archive";
-const files_dir = "/Users/andrijkozevnikov/Documents/test_arch/files_result";
+const vtt_zip_dir =
+  "/Users/andrijkozevnikov/Documents/ProjectYoutube/videos_files_words/zip_vtt";
+const files_dir =
+  "/Users/andrijkozevnikov/Documents/ProjectYoutube/videos_files_words/files";
 
 // Створюємо папки, якщо вони ще не існують
 async function createDirectories() {
@@ -121,7 +123,8 @@ async function createDirectories() {
 
 async function processFiles() {
   await createDirectories();
-  const vtt_files_dir = "/Users/andrijkozevnikov/Documents/test_arch/vtt_files";
+  const vtt_files_dir =
+    "/Users/andrijkozevnikov/Documents/ProjectYoutube/user-history/src/subtitle/subtitleVTT";
 
   let files = await fs.readdir(vtt_files_dir);
   let vtt_files = [];
@@ -168,7 +171,7 @@ async function processFiles() {
       newLines = lines; // Якщо не має рядків з тегом <c>, збережемо весь текст
     }
 
-    const srtFileName = path.join(videoDir, videoId + ".srt");
+    const srtFileName = path.join(videoDir, videoId.split(".")[0] + ".srt");
     await fs.writeFile(srtFileName, newLines.join("\n"));
 
     console.log(`Файл ${file} був оброблений та створено файл SRT.`);
@@ -205,3 +208,5 @@ async function processFiles() {
 }
 
 processFiles().catch(console.error);
+
+//////////////

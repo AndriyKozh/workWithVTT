@@ -2,7 +2,7 @@
 const fs = require("fs");
 
 async function createTxt(rowID) {
-  const filePath = `/Users/andrijkozevnikov/Documents/test_arch/files_result/${rowID}/${rowID}.srt`;
+  const filePath = `/Users/andrijkozevnikov/Documents/ProjectYoutube/videos_files_words/files/${rowID}/${rowID}.srt`;
 
   return new Promise((resolve, reject) => {
     fs.readFile(filePath, "utf8", (err, data) => {
@@ -35,6 +35,7 @@ async function createTxt(rowID) {
           "language",
           "c",
           "nbsp",
+          "музыка",
         ];
 
         words = words.filter((word) => !excludedWords.includes(word));

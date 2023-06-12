@@ -4,7 +4,7 @@ const createCsvWriter = require("csv-writer").createObjectCsvWriter;
 
 async function createStemmedWordsFileFromCSV(fileName) {
   try {
-    const inputFilePath = `/Users/andrijkozevnikov/Documents/test_arch/files_result/${fileName}/words.csv`;
+    const inputFilePath = `/Users/andrijkozevnikov/Documents/ProjectYoutube/videos_files_words/files/${fileName}/words.csv`;
 
     // Читаємо дані з CSV файлу
     const csvData = await fs.readFile(inputFilePath, "utf8");
@@ -16,7 +16,7 @@ async function createStemmedWordsFileFromCSV(fileName) {
     );
 
     // Записуємо дані в CSV формат
-    const outputFilePath = `/Users/andrijkozevnikov/Documents/test_arch/files_result/${fileName}/stems.csv`;
+    const outputFilePath = `/Users/andrijkozevnikov/Documents/ProjectYoutube/videos_files_words/files/${fileName}/stems.csv`;
 
     const csvWriter = createCsvWriter({
       path: outputFilePath,
